@@ -12,8 +12,9 @@
     <a class="item" href="/videos">
       <label>VIDEOS</label>
     </a>
-    <div class="item" id="signout">
-      <%= link_to 'LEAVE', destroy_user_session_path, method: :delete %>
-    </div>
+    <a class="item" data-method="delete" href="/users/sign_out">
+      <label>LEAVE</label>
+    </a>
   </div>
 </div>
+
