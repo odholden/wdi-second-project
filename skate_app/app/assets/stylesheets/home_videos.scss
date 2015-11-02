@@ -1,0 +1,54 @@
+.home_videos {
+  color: black;
+
+  .videobox {
+    background-color: rgba(255,255,255,0.8);
+    width: 900px;
+    display: inline-block;
+    margin: 0 auto;
+
+    h2 {
+      font-size: 30px;
+      letter-spacing: -2px;
+      display: inline-block;
+      text-align: right;
+      padding: 20px;  
+    }
+
+    h3 {
+      font-size: 20px;
+      letter-spacing: -1px;
+      display: inline-block;
+      text-align: right;
+      padding: 20px;  
+
+    }
+
+    .left {
+      float: left;
+      margin: none;
+      padding: none;
+      width: 450px;
+      display: inline-block;
+
+      iframe {
+        width: 400px;
+        height: 225px; 
+        margin: 10px;
+        border: 4px solid black;
+      }
+    }
+
+    .right {
+      float: right;
+      width: 450px;
+      display: inline-block;
+
+
+      h2 {
+
+      }
+    }
+
+  }
+}

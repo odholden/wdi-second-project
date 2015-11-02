@@ -1,12 +1,15 @@
+<div class="home_videos">  
   <% @videos.each do |video| %>
   <div class="videobox">
     <div class="left">
       <a href="/videos/<%= video.id %>">
-        <iframe width=280px height=180px src="http://www.youtube.com/embed/<%= video.url %>"></iframe>
+        <iframe src="http://www.youtube.com/embed/<%= video.url %>"></iframe>
       </a>
     </div>
     <div class="right">
       <h2><%= video.title %></h2>
       <h3><%= video.description %></h3>     
     </div>
+  </div>
   <% end %>
+</div>
