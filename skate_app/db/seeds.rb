@@ -6,37 +6,13 @@ Type.destroy_all    #
 Vehicle.destroy_all #
 Video.destroy_all
 
-# USERS
-u_ollie = User.create(email: 'odholden@gmail.com', password: 'password', image: 'ollie.png', username: 'ollieholden', fame:'100')
-u_guus  = User.create(email: 'guus@who.com', password: 'password', image: 'guus.png', username: 'guuswho', fame:'300')
-u_ben   = User.create(email: 'ben@gemima.com', password: 'password', image: 'ben.png', username: 'suchablayer', fame:'200')
-u_gyom  = User.create(email: 'gyom@french.com', password: 'password', image: 'gyom.png', username: 'gyom', fame:'150')
-u_tony  = User.create(email: 'tony@hawk.com', password: 'password', image: 'tony.png', username: 'tonyhawk', fame:'35000')
-u_eric  = User.create(email: 'eric@koston.com', password: 'password', image: 'eric.png', username: 'erickoston', fame:'10000')
-u_alva  = User.create(email: 'tony@alva.com', password: 'password', image: 'alva.png', username: 'tonyalva', fame:'13000')
-
-# VIDEOS
-v1 = Video.create(user_id: u_ollie.id, vehicle_id: v_skateboard.id, city_id: city_london.id, title: 'day trip', description: 'went to some tourist spots for some gnarly hardcore action dude', url: 'XaC2-Y7YvbA')
-v2 = Video.create(user_id: u_ollie.id, vehicle_id: v_skateboard.id, city_id: city_london.id, title: 'flip team takes london', description: 'a grand day out with team flip', url: 'ixIBSVrShgQ')
-v3 = Video.create(user_id: u_ollie.id, vehicle_id: v_skateboard.id, city_id: city_barca.id, title: 'barcelona trip', description: 'i went to barcelona on me olliedays', url: 'hys0Zwflm0o')
-v4 = Video.create(user_id: u_ollie.id, vehicle_id: v_skateboard.id, city_id: city_barca.id, title: 'kids go mental', description: 'filmed some incredible locals while on my jaunt to espana', url: 'G0OfVRPzFZU')
-v5 = Video.create(user_id: u_ollie.id, vehicle_id: v_skateboard.id, city_id: city_sanfran.id, title: 'sick grinds', description: 'went to san fran and grinded it all the way up to eleven', url: 'OkY36vO2-wk')
-v6 = Video.create(user_id: u_ollie.id, vehicle_id: v_skateboard.id, city_id: city_nyc.id, title: 'new york new york', description: 'went to new york, predominantly to jump over some benches', url: '2RW92JlKmd8')
-v7 = Video.create(user_id: u_guus.id, vehicle_id: v_skateboard.id, city_id: city_amster.id, title: 'amsterdam skate comp', description: 'we kicked some butt in amstydam', url: 'BQBWoYmN1-w')
-v8 = Video.create(user_id: u_ben.id, vehicle_id: v_skateboard.id, city_id: city_prague.id, title: 'a jolly weekend in prague', description: 'lads on prague #ladsladsladsladslads', url: 'osqhpi7ro18')
-v9 = Video.create(user_id: u_gyom.id, vehicle_id: v_skateboard.id, city_id: city_paris.id, title: 'teen trip', description: 'trip to paris when we were 16', url: '0TTJI3tFeOI')
-v10 = Video.create(user_id: u_tony.id, vehicle_id: v_skateboard.id, city_id: city_seattle.id, title: '', description: '', url: '')
-v11 = Video.create(user_id: u_tony.id, vehicle_id: v_skateboard.id, city_id: city_la.id, title: 'skating the pool', description: 'i found a swimming pool, emptied it, then got all excited', url: 'sFjHy4ip2FM')
-v12 = Video.create(user_id: u_tony.id, vehicle_id: v_skateboard.id, city_id: city_portland.id, title: 'the 900', description: 'i became the first in the world to complete a full 900 rotation. go me', url: 'e4QGnppJ-ys')
-v13 = Video.create(user_id: u_eric.id, vehicle_id: v_skateboard.id, city_id: city_budapest.id, title: 'budapest', description: 'had a marvellous weekend in budapest, grinding all over the shop', url: 'zPBFNoEEleE')
-v14 = Video.create(user_id: u_eric.id, vehicle_id: v_skateboard.id, city_id: city_la.id, title: 'off the grid', description: 'had enough of my stressful pro skater lifestyle, so went off on my own', url: 'bSBWG9roUD8')
-v15 = Video.create(user_id: u_alva.id, vehicle_id: v_skateboard.id, city_id: city_rome.id, title: 'pipes', description: 'found some great pipes with my friends in the 70s, basically invented this whole thing. i think its a big deal', url: 'o7rK6lxVJK0')
-v16 = Video.create(user_id: u_alva.id, vehicle_id: v_skateboard.id, city_id: city_la.id, title: 'venice beach', description: 'a return to the birth of it all', url: 'aLdRu0fG1zY')
-
-
-# TRICKS  
-t1 = Trick.create(video_id: '', comment: '', fame: '')
-
+# VEHICLES
+v_bmx        = Vehicle.create(name: 'bmx')
+v_skateboard = Vehicle.create(name: 'skateboard')
+v_blades     = Vehicle.create(name: 'blades')
+v_scooter    = Vehicle.create(name: 'scooter')
+v_skiing     = Vehicle.create(name: 'skiing')
+v_snowboard  = Vehicle.create(name: 'snowboard')
 
 # TYPES
 type1  = Type.create(name: 'Backside Flip', difficulty: '')
@@ -119,14 +95,6 @@ type77 = Type.create(name: 'One Wheel Manual', difficulty: '')
 type78 = Type.create(name: 'Roll In', difficulty: '')
 type79 = Type.create(name: 'Tic-Tac', difficulty: '')
 
-# VEHICLES
-v_bmx        = Vehicle.create(name: 'bmx')
-v_skateboard = Vehicle.create(name: 'skateboard')
-v_blades     = Vehicle.create(name: 'blades')
-v_scooter    = Vehicle.create(name: 'scooter')
-v_skiing     = Vehicle.create(name: 'skiing')
-v_snowboard  = Vehicle.create(name: 'snowboard')
-
 # COUNTRIES
 c_usa     = Country.create(name: 'usa')
 c_canada  = Country.create(name: 'canada')
@@ -190,5 +158,37 @@ c_finland = Country.create(name: 'finland')
   city_oslo     = City.create(name:'norway', country_id: c_norway.id)
   city_stock    = City.create(name:'stockholm', country_id: c_sweden.id)
   city_helsinki = City.create(name:'helsinki', country_id: c_finland.id)
+
+# USERS
+u_ollie = User.create(email: 'odholden@gmail.com', password: 'password', image: 'ollie.png', username: 'ollieholden', fame:'100')
+u_guus  = User.create(email: 'guus@who.com', password: 'password', image: 'guus.png', username: 'guuswho', fame:'300')
+u_ben   = User.create(email: 'ben@gemima.com', password: 'password', image: 'ben.png', username: 'suchablayer', fame:'200')
+u_gyom  = User.create(email: 'gyom@french.com', password: 'password', image: 'gyom.png', username: 'gyom', fame:'150')
+u_tony  = User.create(email: 'tony@hawk.com', password: 'password', image: 'tony.png', username: 'tonyhawk', fame:'35000')
+u_eric  = User.create(email: 'eric@koston.com', password: 'password', image: 'eric.png', username: 'erickoston', fame:'10000')
+u_alva  = User.create(email: 'tony@alva.com', password: 'password', image: 'alva.png', username: 'tonyalva', fame:'13000')
+
+# VIDEOS
+v1 = Video.create(user_id: u_ollie.id, vehicle_id: v_skateboard.id, city_id: city_london.id, title: 'day trip', description: 'went to some tourist spots for some gnarly hardcore action dude', url: 'XaC2-Y7YvbA')
+v2 = Video.create(user_id: u_ollie.id, vehicle_id: v_skateboard.id, city_id: city_london.id, title: 'flip team takes london', description: 'a grand day out with team flip', url: 'ixIBSVrShgQ')
+v3 = Video.create(user_id: u_ollie.id, vehicle_id: v_skateboard.id, city_id: city_barca.id, title: 'barcelona trip', description: 'i went to barcelona on me olliedays', url: 'hys0Zwflm0o')
+v4 = Video.create(user_id: u_ollie.id, vehicle_id: v_skateboard.id, city_id: city_barca.id, title: 'kids go mental', description: 'filmed some incredible locals while on my jaunt to espana', url: 'G0OfVRPzFZU')
+v5 = Video.create(user_id: u_ollie.id, vehicle_id: v_skateboard.id, city_id: city_sanfran.id, title: 'sick grinds', description: 'went to san fran and grinded it all the way up to eleven', url: 'OkY36vO2-wk')
+v6 = Video.create(user_id: u_ollie.id, vehicle_id: v_skateboard.id, city_id: city_nyc.id, title: 'new york new york', description: 'went to new york, predominantly to jump over some benches', url: '2RW92JlKmd8')
+v7 = Video.create(user_id: u_guus.id, vehicle_id: v_skateboard.id, city_id: city_amster.id, title: 'amsterdam skate comp', description: 'we kicked some butt in amstydam', url: 'BQBWoYmN1-w')
+v8 = Video.create(user_id: u_ben.id, vehicle_id: v_skateboard.id, city_id: city_prague.id, title: 'a jolly weekend in prague', description: 'lads on prague #ladsladsladsladslads', url: 'osqhpi7ro18')
+v9 = Video.create(user_id: u_gyom.id, vehicle_id: v_skateboard.id, city_id: city_paris.id, title: 'teen trip', description: 'trip to paris when we were 16', url: '0TTJI3tFeOI')
+v10 = Video.create(user_id: u_tony.id, vehicle_id: v_skateboard.id, city_id: city_seattle.id, title: '', description: '', url: '')
+v11 = Video.create(user_id: u_tony.id, vehicle_id: v_skateboard.id, city_id: city_la.id, title: 'skating the pool', description: 'i found a swimming pool, emptied it, then got all excited', url: 'sFjHy4ip2FM')
+v12 = Video.create(user_id: u_tony.id, vehicle_id: v_skateboard.id, city_id: city_portland.id, title: 'the 900', description: 'i became the first in the world to complete a full 900 rotation. go me', url: 'e4QGnppJ-ys')
+v13 = Video.create(user_id: u_eric.id, vehicle_id: v_skateboard.id, city_id: city_budapest.id, title: 'budapest', description: 'had a marvellous weekend in budapest, grinding all over the shop', url: 'zPBFNoEEleE')
+v14 = Video.create(user_id: u_eric.id, vehicle_id: v_skateboard.id, city_id: city_la.id, title: 'off the grid', description: 'had enough of my stressful pro skater lifestyle, so went off on my own', url: 'bSBWG9roUD8')
+v15 = Video.create(user_id: u_alva.id, vehicle_id: v_skateboard.id, city_id: city_rome.id, title: 'pipes', description: 'found some great pipes with my friends in the 70s, basically invented this whole thing. i think its a big deal', url: 'o7rK6lxVJK0')
+v16 = Video.create(user_id: u_alva.id, vehicle_id: v_skateboard.id, city_id: city_la.id, title: 'venice beach', description: 'a return to the birth of it all', url: 'aLdRu0fG1zY')
+
+
+# TRICKS  
+t1 = Trick.create(video_id: '', comment: '', fame: '')
+
 
 
