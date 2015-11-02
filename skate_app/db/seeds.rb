@@ -1,3 +1,11 @@
+User.destroy_all
+City.destroy_all
+Country.destroy_all
+Trick.destroy_all
+Type.destroy_all
+Vehicle.destroy_all
+Video.destroy_all
+
 # USERS
 
 u1 = User.create(email: 'odholden@gmail.com', password: 'password', image: 'ollie.png', username: 'ollieholden', fame:'100')
@@ -40,47 +48,47 @@ c_finland = Country.create(name: 'finland')
 
   ## USA
   city_la       = City.create(name:'los angeles', country_id: c_usa.id)
-  city_nyc      = 
-  city_sanfran  = 
-  city_portland = 
-  city_chicago  = 
-  city_seattle  = 
-  city_philly   = 
-  city_sandiego = 
-  city_miami    = 
-  city_wash     = 
-  city_fortlaud = 
+  # city_nyc      = 
+  # city_sanfran  = 
+  # city_portland = 
+  # city_chicago  = 
+  # city_seattle  = 
+  # city_philly   = 
+  # city_sandiego = 
+  # city_miami    = 
+  # city_wash     = 
+  # city_fortlaud = 
   
-  ## CANADA
-  city_vanc     = 
-  city_montreal = 
-  city_calgary  = 
-  city_ottawa   = 
-  city_toronto  = 
-  city_victoria = 
+  # ## CANADA
+  # city_vanc     = 
+  # city_montreal = 
+  # city_calgary  = 
+  # city_ottawa   = 
+  # city_toronto  = 
+  # city_victoria = 
   
-  ## UK
-  city_bristol  = 
-  city_london   = 
-  city_leeds    = 
-  city_edin     =
-  city_birm     =
+  # ## UK
+  # city_bristol  = 
+  # city_london   = 
+  # city_leeds    = 
+  # city_edin     =
+  # city_birm     =
   
-  ## EUROPE
-  city_barca    = 
-  city_madrid   =
-  city_berlin   = 
-  city_prague   = 
-  city_budapest = 
-  city_rome     = 
-  city_vienna   = 
-  city_moscow   = 
-  city_warsaw   = 
-  city_paris    = 
-  city_valencia = 
-  city_amster   = 
-  city_oslo     = 
-  city_stock    = 
-  city_helsinki = 
+  # ## EUROPE
+  # city_barca    = 
+  # city_madrid   =
+  # city_berlin   = 
+  # city_prague   = 
+  # city_budapest = 
+  # city_rome     = 
+  # city_vienna   = 
+  # city_moscow   = 
+  # city_warsaw   = 
+  # city_paris    = 
+  # city_valencia = 
+  # city_amster   = 
+  # city_oslo     = 
+  # city_stock    = 
+  # city_helsinki = 
 
 
