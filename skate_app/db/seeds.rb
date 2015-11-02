@@ -19,6 +19,23 @@ v_snowboard  = Vehicle.create(name: 'snowboard')
 
 # COUNTRY
 
+c_usa     = 
+c_canada  =
+c_uk      = 
+c_spain   = 
+c_germ    = 
+c_czech   = 
+c_hung    = 
+c_italy   = 
+c_austria = 
+c_russia  = 
+c_poland  = 
+c_france  = 
+c_neth    = 
+c_sweden  = 
+c_norway  = 
+c_finland = 
+
 # CITY
 
 ## USA
