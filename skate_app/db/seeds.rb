@@ -17,70 +17,70 @@ v_scooter    = Vehicle.create(name: 'scooter')
 v_skiing     = Vehicle.create(name: 'skiing')
 v_snowboard  = Vehicle.create(name: 'snowboard')
 
-# COUNTRY
+# COUNTRIES
 
-c_usa     = 
-c_canada  =
-c_uk      = 
-c_spain   = 
-c_germ    = 
-c_czech   = 
-c_hung    = 
-c_italy   = 
-c_austria = 
-c_russia  = 
-c_poland  = 
-c_france  = 
-c_neth    = 
-c_sweden  = 
-c_norway  = 
-c_finland = 
+c_usa     = Country.create(name: 'usa')
+c_canada  = Country.create(name: 'canada')
+c_uk      = Country.create(name: 'uk')
+c_spain   = Country.create(name: 'spain')
+c_germ    = Country.create(name: 'germany')
+c_czech   = Country.create(name: 'czech republic')
+c_hung    = Country.create(name: 'hungary')
+c_italy   = Country.create(name: 'italy')
+c_austria = Country.create(name: 'austria')
+c_russia  = Country.create(name: 'russia')
+c_poland  = Country.create(name: 'poland')
+c_france  = Country.create(name: 'france')
+c_neth    = Country.create(name: 'netherlands')
+c_sweden  = Country.create(name: 'sweden')
+c_norway  = Country.create(name: 'norway')
+c_finland = Country.create(name: 'finland')
 
-# CITY
+# CITIES
 
-## USA
-city_la       = City.create()
-city_nyc      = 
-city_sanfran  = 
-city_portland = 
-city_chicago  = 
-city_seattle  = 
-city_philly   = 
-city_sandiego = 
-city_miami    = 
-city_wash     = 
-city_fortlaud = 
-
-## CANADA
-city_vanc     = 
-city_montreal = 
-city_calgary  = 
-city_ottawa   = 
-city_toronto  = 
-city_victoria = 
-
-## UK
-city_bristol  = 
-city_london   = 
-city_leeds    = 
-city_edin     =
-city_birm     =
-
-## EUROPE
-city_barca    = 
-city_madrid   =
-city_berlin   = 
-city_prague   = 
-city_budapest = 
-city_rome     = 
-city_vienna   = 
-city_moscow   = 
-city_warsaw   = 
-city_paris    = 
-city_valencia = 
-city_amster   = 
-city_oslo     = 
-city_stock    = 
-city_helsinki = 
+  ## USA
+  city_la       = City.create(name:'los angeles', country_id: c_usa.id)
+  city_nyc      = 
+  city_sanfran  = 
+  city_portland = 
+  city_chicago  = 
+  city_seattle  = 
+  city_philly   = 
+  city_sandiego = 
+  city_miami    = 
+  city_wash     = 
+  city_fortlaud = 
+  
+  ## CANADA
+  city_vanc     = 
+  city_montreal = 
+  city_calgary  = 
+  city_ottawa   = 
+  city_toronto  = 
+  city_victoria = 
+  
+  ## UK
+  city_bristol  = 
+  city_london   = 
+  city_leeds    = 
+  city_edin     =
+  city_birm     =
+  
+  ## EUROPE
+  city_barca    = 
+  city_madrid   =
+  city_berlin   = 
+  city_prague   = 
+  city_budapest = 
+  city_rome     = 
+  city_vienna   = 
+  city_moscow   = 
+  city_warsaw   = 
+  city_paris    = 
+  city_valencia = 
+  city_amster   = 
+  city_oslo     = 
+  city_stock    = 
+  city_helsinki = 
 
 
