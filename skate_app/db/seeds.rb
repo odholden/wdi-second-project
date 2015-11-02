@@ -21,7 +21,8 @@ v_snowboard  = Vehicle.create(name: 'snowboard')
 
 # CITY
 
-city_la       =
+## USA
+city_la       = City.create()
 city_nyc      = 
 city_sanfran  = 
 city_portland = 
@@ -32,5 +33,15 @@ city_sandiego =
 city_miami    = 
 city_wash     = 
 city_fortlaud = 
+
+## CANADA
+city_vanc     = 
+city_montreal = 
+city_calgary  = 
+city_ottawa   = 
+city_toronto  = 
+city_victoria = 
+
+##
 
 
