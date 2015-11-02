@@ -1,24 +1,19 @@
 <div class="navigation">
   <div class="icon-bar five-up">
-    <a class="item">
-      <img src="../assets/img/images/fi-home.svg" >
-      <label>HOME</label>
+    <a class="item" href="/home">
+    <%= image_tag 'svgs/fi-home.svg' %>
     </a>
-    <a class="item">
-      <img src="../assets/img/images/fi-bookmark.svg" >
-      <label>FRIENDS</label>
+    <a class="item" href="/about">
+      <label>ABOUT</label>
     </a>
-    <a class="item">
-      <img src="../assets/img/images/fi-info.svg" >
+    <a class="item" href="/users">
+      <label>MATES</label>
+    </a>
+    <a class="item" href="/videos">
       <label>VIDEOS</label>
     </a>
-    <a class="item">
-      <img src="../assets/img/images/fi-mail.svg" >
-      <label>ADD VIDEO</label>
-    </a>
-    <a class="item">
-      <img src="../assets/img/images/fi-like.svg" >
-      <label>SIGN OUT</label>
-    </a>
+    <div class="item" id="signout">
+      <%= link_to 'LEAVE', destroy_user_session_path, method: :delete %>
+    </div>
   </div>
 </div>

@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   devise_for :users
   resources :users, only: :show 
   get '/users', to: 'users#index'
+  get '/about', to: 'static#about'
 
 end
