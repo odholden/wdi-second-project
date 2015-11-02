@@ -42,6 +42,28 @@ city_ottawa   =
 city_toronto  = 
 city_victoria = 
 
-##
+## UK
+city_bristol  = 
+city_london   = 
+city_leeds    = 
+city_edin     =
+city_birm     =
+
+## EUROPE
+city_barca    = 
+city_madrid   =
+city_berlin   = 
+city_prague   = 
+city_budapest = 
+city_rome     = 
+city_vienna   = 
+city_moscow   = 
+city_warsaw   = 
+city_paris    = 
+city_valencia = 
+city_amster   = 
+city_oslo     = 
+city_stock    = 
+city_helsinki = 
 
 
