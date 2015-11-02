@@ -1,11 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  video_id: 
-  comment: MyString
-  fame: 1
+  name: MyString
+  country_id: 
 
 two:
-  video_id: 
-  comment: MyString
-  fame: 1
+  name: MyString
+  country_id: 

@@ -1,8 +1,7 @@
 class CreateTricks < ActiveRecord::Migration
   def change
     create_table :tricks do |t|
-      t.integer :video_id
-      t.time :time
+      t.references :video, index: true, foreign_key: true
       t.string :comment
       t.integer :fame
 
