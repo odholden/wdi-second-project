@@ -1,13 +1,12 @@
-User.destroy_all
-City.destroy_all
-Country.destroy_all
+User.destroy_all    #
+City.destroy_all    #
+Country.destroy_all #
 Trick.destroy_all
 Type.destroy_all
-Vehicle.destroy_all
+Vehicle.destroy_all #
 Video.destroy_all
 
 # USERS
-
 u1 = User.create(email: 'odholden@gmail.com', password: 'password', image: 'ollie.png', username: 'ollieholden', fame:'100')
 u2 = User.create(email: 'guus@who.com', password: 'password', image: 'guus.png', username: 'guuswho', fame:'300')
 u3 = User.create(email: 'ben@gemima.com', password: 'password', image: 'ben.png', username: 'suchablayer', fame:'200')
@@ -16,8 +15,92 @@ u5 = User.create(email: 'tony@hawk.com', password: 'password', image: 'tony.png'
 u6 = User.create(email: 'eric@koston.com', password: 'password', image: 'eric.png', username: 'erickoston', fame:'10000')
 u7 = User.create(email: 'tony@alva.com', password: 'password', image: 'alva.png', username: 'tonyalva', fame:'13000')
 
-# VEHICLES
+# TYPES
+type1 = Type.create(name: 'Backside Flip', difficulty: '')
+type2 = Type.create(name: 'Backside Heelflip', difficulty: '')
+type3 = Type.create(name: 'Camel Flip', difficulty: '')
+type4 = Type.create(name: 'Casper Flip', difficulty: '')
+type5 = Type.create(name: 'De Comply', difficulty: '')
+type6 = Type.create(name: '540 Flip', difficulty: '')
+type7 = Type.create(name: 'Frontside Flip', difficulty: '')
+type8 = Type.create(name: 'Frontside Heelflip', difficulty: '')
+type9 = Type.create(name: 'Hardflip', difficulty: '')
+type10 = Type.create(name: 'Heelflip', difficulty: '')
+type11 = Type.create(name: 'Inward Heelflip', difficulty: '')
+type12 = Type.create(name: 'Kickflip', difficulty: '')
+type13 = Type.create(name: 'No Comply', difficulty: '')
+type14 = Type.create(name: 'Ollie', difficulty: '')
+type15 = Type.create(name: 'Pop Shuvit', difficulty: '')
+type16 = Type.create(name: '720 Flip', difficulty: '')
+type17 = Type.create(name: 'Shuvit', difficulty: '')
+type18 = Type.create(name: '360 Flip', difficulty: '')
+type19 = Type.create(name: '360 Shuvit', difficulty: '')
+type20 = Type.create(name: '360 Ollie Heelflip', difficulty: '')
+type21 = Type.create(name: '360 Ollie Kickflip', difficulty: '')
+type22 = Type.create(name: 'Varial Heelflip', difficulty: '')
+type23 = Type.create(name: 'Varial Kickflip', difficulty: '')
+type24 = Type.create(name: 'Bluntslide', difficulty: '')
+type25 = Type.create(name: 'Boardslide', difficulty: '')
+type26 = Type.create(name: 'Crooked Grind', difficulty: '')
+type27 = Type.create(name: 'Darkslide', difficulty: '')
+type28 = Type.create(name: '5-0 Grind', difficulty: '')
+type29 = Type.create(name: 'Lipslide', difficulty: '')
+type30 = Type.create(name: 'Noseblunt Slide', difficulty: '')
+type31 = Type.create(name: 'Nosegrind', difficulty: '')
+type32 = Type.create(name: 'Noseslide', difficulty: '')
+type33 = Type.create(name: 'Tailslide', difficulty: '')
+type34 = Type.create(name: '180', difficulty: '')
+type35 = Type.create(name: '270', difficulty: '')
+type36 = Type.create(name: '360', difficulty: '')
+type37 = Type.create(name: '540', difficulty: '')
+type38 = Type.create(name: '720', difficulty: '')
+type39 = Type.create(name: '900', difficulty: '')
+type40 = Type.create(name: 'Airwalk', difficulty: '')
+type41 = Type.create(name: 'Backflip', difficulty: '')
+type42 = Type.create(name: 'Benihana', difficulty: '')
+type43 = Type.create(name: 'Christ Air', difficulty: '')
+type44 = Type.create(name: 'Crossbone', difficulty: '')
+type45 = Type.create(name: 'Double Grab', difficulty: '')
+type46 = Type.create(name: 'Frontside Air', difficulty: '')
+type47 = Type.create(name: 'Japan Air', difficulty: '')
+type48 = Type.create(name: 'McTwist', difficulty: '')
+type49 = Type.create(name: 'Method Air', difficulty: '')
+type50 = Type.create(name: 'Mute Air', difficulty: '')
+type51 = Type.create(name: 'Nosebone', difficulty: '')
+type52 = Type.create(name: 'Nose Grab', difficulty: '')
+type53 = Type.create(name: 'Ollie to Fakie', difficulty: '')
+type54 = Type.create(name: 'Rocket Air', difficulty: '')
+type55 = Type.create(name: 'Stalefish Grab', difficulty: '')
+type56 = Type.create(name: 'Tailbone', difficulty: '')
+type57 = Type.create(name: 'Tail Grab', difficulty: '')
+type58 = Type.create(name: 'Varial', difficulty: '')
+type59 = Type.create(name: 'Axle Stall', difficulty: '')
+type60 = Type.create(name: 'Blunt', difficulty: '')
+type61 = Type.create(name: 'Egg Plant', difficulty: '')
+type62 = Type.create(name: 'Nose Stall', difficulty: '')
+type63 = Type.create(name: 'Noseblunt', difficulty: '')
+type64 = Type.create(name: 'Rock and Roll', difficulty: '')
+type65 = Type.create(name: 'Rock to Fakie', difficulty: '')
+type66 = Type.create(name: 'Tail Stall', difficulty: '')
+type67 = Type.create(name: 'Acid Drop', difficulty: '')
+type68 = Type.create(name: 'Alley Oop', difficulty: '')
+type69 = Type.create(name: 'Body Varial', difficulty: '')
+type70 = Type.create(name: 'Casper', difficulty: '')
+type71 = Type.create(name: 'Hang Ten', difficulty: '')
+type72 = Type.create(name: 'Invert', difficulty: '')
+type73 = Type.create(name: 'Kickturn', difficulty: '')
+type74 = Type.create(name: 'Manual', difficulty: '')
+type75 = Type.create(name: 'Nose Manual', difficulty: '')
+type76 = Type.create(name: 'One Foot Manual', difficulty: '')
+type77 = Type.create(name: 'One Wheel Manual', difficulty: '')
+type78 = Type.create(name: 'Roll In', difficulty: '')
+type79 = Type.create(name: 'Tic-Tac', difficulty: '')
 
+# TRICKS  
+t1 = Trick.create(video_id: '', comment: '', fame: '')
+
+
+# VEHICLES
 v_bmx        = Vehicle.create(name: 'bmx')
 v_skateboard = Vehicle.create(name: 'skateboard')
 v_blades     = Vehicle.create(name: 'blades')
@@ -26,7 +109,6 @@ v_skiing     = Vehicle.create(name: 'skiing')
 v_snowboard  = Vehicle.create(name: 'snowboard')
 
 # COUNTRIES
-
 c_usa     = Country.create(name: 'usa')
 c_canada  = Country.create(name: 'canada')
 c_uk      = Country.create(name: 'uk')
@@ -45,7 +127,6 @@ c_norway  = Country.create(name: 'norway')
 c_finland = Country.create(name: 'finland')
 
 # CITIES
-
   ## USA
   city_la       = City.create(name:'los angeles', country_id: c_usa.id)
   city_nyc      = City.create(name:'new york', country_id: c_usa.id)
