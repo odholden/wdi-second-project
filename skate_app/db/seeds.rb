@@ -48,47 +48,47 @@ c_finland = Country.create(name: 'finland')
 
   ## USA
   city_la       = City.create(name:'los angeles', country_id: c_usa.id)
-  # city_nyc      = 
-  # city_sanfran  = 
-  # city_portland = 
-  # city_chicago  = 
-  # city_seattle  = 
-  # city_philly   = 
-  # city_sandiego = 
-  # city_miami    = 
-  # city_wash     = 
-  # city_fortlaud = 
+  city_nyc      = City.create(name:'new york', country_id: c_usa.id)
+  city_sanfran  = City.create(name:'san francisco', country_id: c_usa.id)
+  city_portland = City.create(name:'portland', country_id: c_usa.id)
+  city_chicago  = City.create(name:'chicago', country_id: c_usa.id)
+  city_seattle  = City.create(name:'seattle', country_id: c_usa.id)
+  city_philly   = City.create(name:'philadelphia', country_id: c_usa.id)
+  city_sandiego = City.create(name:'san diego', country_id: c_usa.id)
+  city_miami    = City.create(name:'miami', country_id: c_usa.id)
+  city_wash     = City.create(name:'washington', country_id: c_usa.id)
+  city_fortlaud = City.create(name:'fort lauderdale', country_id: c_usa.id)
   
-  # ## CANADA
-  # city_vanc     = 
-  # city_montreal = 
-  # city_calgary  = 
-  # city_ottawa   = 
-  # city_toronto  = 
-  # city_victoria = 
+  ## CANADA
+  city_vanc     = City.create(name:'vancouver', country_id: c_canada.id)
+  city_montreal = City.create(name:'montreal', country_id: c_canada.id)
+  city_calgary  = City.create(name:'calgary', country_id: c_canada.id)
+  city_ottawa   = City.create(name:'ottawa', country_id: c_canada.id)
+  city_toronto  = City.create(name:'toronto', country_id: c_canada.id)
+  city_victoria = City.create(name:'victoria', country_id: c_canada.id)
   
-  # ## UK
-  # city_bristol  = 
-  # city_london   = 
-  # city_leeds    = 
-  # city_edin     =
-  # city_birm     =
+  ## UK
+  city_bristol  = City.create(name:'bristol', country_id: c_uk.id)
+  city_london   = City.create(name:'london', country_id: c_uk.id)
+  city_leeds    = City.create(name:'leeds', country_id: c_uk.id)
+  city_edin     = City.create(name:'edinburgh', country_id: c_uk.id)
+  city_birm     = City.create(name:'birmingham', country_id: c_uk.id)
   
-  # ## EUROPE
-  # city_barca    = 
-  # city_madrid   =
-  # city_berlin   = 
-  # city_prague   = 
-  # city_budapest = 
-  # city_rome     = 
-  # city_vienna   = 
-  # city_moscow   = 
-  # city_warsaw   = 
-  # city_paris    = 
-  # city_valencia = 
-  # city_amster   = 
-  # city_oslo     = 
-  # city_stock    = 
-  # city_helsinki = 
+  ## EUROPE
+  city_barca    = City.create(name:'barcelona', country_id: c_spain.id)
+  city_madrid   = City.create(name:'madrid', country_id: c_spain.id)
+  city_berlin   = City.create(name:'berlin', country_id: c_germ.id)
+  city_prague   = City.create(name:'prague', country_id: c_czech.id)
+  city_budapest = City.create(name:'hungary', country_id: c_hung.id)
+  city_rome     = City.create(name:'rome', country_id: c_italy.id)
+  city_vienna   = City.create(name:'vienna', country_id: c_austria.id)
+  city_moscow   = City.create(name:'moscow', country_id: c_russia.id)
+  city_warsaw   = City.create(name:'warsaw', country_id: c_poland.id)
+  city_paris    = City.create(name:'paris', country_id: c_france.id)
+  city_valencia = City.create(name:'valencia', country_id: c_spain.id)
+  city_amster   = City.create(name:'amsterdam', country_id: c_neth.id)
+  city_oslo     = City.create(name:'norway', country_id: c_norway.id)
+  city_stock    = City.create(name:'stockholm', country_id: c_sweden.id)
+  city_helsinki = City.create(name:'helsinki', country_id: c_finland.id)
 
 
