@@ -7,13 +7,36 @@ Vehicle.destroy_all #
 Video.destroy_all
 
 # USERS
-u1 = User.create(email: 'odholden@gmail.com', password: 'password', image: 'ollie.png', username: 'ollieholden', fame:'100')
-u2 = User.create(email: 'guus@who.com', password: 'password', image: 'guus.png', username: 'guuswho', fame:'300')
-u3 = User.create(email: 'ben@gemima.com', password: 'password', image: 'ben.png', username: 'suchablayer', fame:'200')
-u4 = User.create(email: 'gyom@french.com', password: 'password', image: 'gyom.png', username: 'gyom', fame:'150')
-u5 = User.create(email: 'tony@hawk.com', password: 'password', image: 'tony.png', username: 'tonyhawk', fame:'35000')
-u6 = User.create(email: 'eric@koston.com', password: 'password', image: 'eric.png', username: 'erickoston', fame:'10000')
-u7 = User.create(email: 'tony@alva.com', password: 'password', image: 'alva.png', username: 'tonyalva', fame:'13000')
+u_ollie = User.create(email: 'odholden@gmail.com', password: 'password', image: 'ollie.png', username: 'ollieholden', fame:'100')
+u_guus  = User.create(email: 'guus@who.com', password: 'password', image: 'guus.png', username: 'guuswho', fame:'300')
+u_ben   = User.create(email: 'ben@gemima.com', password: 'password', image: 'ben.png', username: 'suchablayer', fame:'200')
+u_gyom  = User.create(email: 'gyom@french.com', password: 'password', image: 'gyom.png', username: 'gyom', fame:'150')
+u_tony  = User.create(email: 'tony@hawk.com', password: 'password', image: 'tony.png', username: 'tonyhawk', fame:'35000')
+u_eric  = User.create(email: 'eric@koston.com', password: 'password', image: 'eric.png', username: 'erickoston', fame:'10000')
+u_alva  = User.create(email: 'tony@alva.com', password: 'password', image: 'alva.png', username: 'tonyalva', fame:'13000')
+
+# VIDEOS
+v1 = Video.create(user_id: u_ollie.id, vehicle_id: v_skateboard.id, city_id: city_london.id, title: '', description: '', url: '')
+v2 = Video.create(user_id: u_ollie.id, vehicle_id: v_skateboard.id, city_id: city_london.id, title: '', description: '', url: '')
+v3 = Video.create(user_id: u_ollie.id, vehicle_id: v_skateboard.id, city_id: city_london.id, title: '', description: '', url: '')
+v4 = Video.create(user_id: u_ollie.id, vehicle_id: v_skateboard.id, city_id: city_london.id, title: '', description: '', url: '')
+v5 = Video.create(user_id: u_ollie.id, vehicle_id: v_skateboard.id, city_id: city_london.id, title: '', description: '', url: '')
+v6 = Video.create(user_id: u_ollie.id, vehicle_id: v_skateboard.id, city_id: city_london.id, title: '', description: '', url: '')
+v7 = Video.create(user_id: u_guus.id, vehicle_id: v_skateboard.id, city_id: city_london.id, title: '', description: '', url: '')
+v8 = Video.create(user_id: u_ben.id, vehicle_id: v_skateboard.id, city_id: city_london.id, title: '', description: '', url: '')
+v9 = Video.create(user_id: u_ollie.id, vehicle_id: v_skateboard.id, city_id: city_london.id, title: '', description: '', url: '')
+v10 = Video.create(user_id: u_ollie.id, vehicle_id: v_skateboard.id, city_id: city_london.id, title: '', description: '', url: '')
+v11 = Video.create(user_id: u_ollie.id, vehicle_id: v_skateboard.id, city_id: city_london.id, title: '', description: '', url: '')
+v12 = Video.create(user_id: u_ollie.id, vehicle_id: v_skateboard.id, city_id: city_london.id, title: '', description: '', url: '')
+v13 = Video.create(user_id: u_ollie.id, vehicle_id: v_skateboard.id, city_id: city_london.id, title: '', description: '', url: '')
+v14 = Video.create(user_id: u_ollie.id, vehicle_id: v_skateboard.id, city_id: city_london.id, title: '', description: '', url: '')
+v15 = Video.create(user_id: u_ollie.id, vehicle_id: v_skateboard.id, city_id: city_london.id, title: '', description: '', url: '')
+v16 = Video.create(user_id: u_ollie.id, vehicle_id: v_skateboard.id, city_id: city_london.id, title: '', description: '', url: '')
+
+
+# TRICKS  
+t1 = Trick.create(video_id: '', comment: '', fame: '')
+
 
 # TYPES
 type1  = Type.create(name: 'Backside Flip', difficulty: '')
@@ -95,10 +118,6 @@ type76 = Type.create(name: 'One Foot Manual', difficulty: '')
 type77 = Type.create(name: 'One Wheel Manual', difficulty: '')
 type78 = Type.create(name: 'Roll In', difficulty: '')
 type79 = Type.create(name: 'Tic-Tac', difficulty: '')
-
-# TRICKS  
-t1 = Trick.create(video_id: '', comment: '', fame: '')
-
 
 # VEHICLES
 v_bmx        = Vehicle.create(name: 'bmx')
