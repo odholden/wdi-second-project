@@ -1,0 +1,80 @@
+label {
+  font-variant: small-caps;
+  color: white;
+  font-weight: bolder;
+  font-size: 18px;
+}  
+
+a {
+  font-variant: small-caps;
+  color: white;
+  font-weight: bolder;
+  margin: 15px;
+}
+
+form .field input {
+  width: 300px;
+  color: black;
+}  
+
+#user_remember_me {
+  width: 10px;
+}
+
+.login-header {
+  clear: both;
+  padding-bottom: 10px;
+}
+
+.login {
+  clear: both;
+  background-color: $translucent;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+
+  input {
+    background: none;
+    border: 3px solid white;
+    font-variant: small-caps;
+    color: white;
+    font-weight: bolder;
+    font-size: 18px;
+    margin: 5px auto;
+  }
+}
+
+.signup {
+  clear: both;
+  background-color: $translucent;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+
+  input {
+    background: none;
+    border: 3px solid white;
+    font-variant: small-caps;
+    color: white;
+    font-weight: bolder;
+    font-size: 18px;
+    margin: 5px auto;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  body {
+
+    a label {
+      font-size: 14px;
+      padding: 5px 0px;
+      letter-spacing: -0.6px;
+    }
+
+    #signout {
+      color: black;
+      font-size: 14px;
+      letter-spacing: -0.6px;
+    }
+  }
+}
