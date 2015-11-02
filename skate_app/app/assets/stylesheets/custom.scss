@@ -1,7 +1,98 @@
 body {
+  max-width: 960px;
+  margin: 0 auto;  
   background-image: url('bg1.png');
-  background-size: 100%;
+  background-color: black;
+  background-size: 960px;
   background-attachment: fixed;
   background-position: center top;
+  background-repeat: no-repeat;
+  text-align: center;
+
+  label {
+    font-variant: small-caps;
+    color: white;
+    font-weight: bolder;
+    font-size: 18px;
+  }  
+
+  a {
+    font-variant: small-caps;
+    color: white;
+    font-weight: bolder;
+    margin: 15px;
+  }
+
+  h1 {
+    clear: both;
+    float: right;
+    padding-right: 5%;
+    font-size: 50px;
+    font-weight: bolder;
+    letter-spacing: -4px;
+    color: black;
+  }
+
+  h2 {
+    clear: both;
+    float: right;
+    padding-right: 5%;
+    color: black;
+    letter-spacing: -3px;
+    font-size: 30px;
+    font-weight: bolder;
+  }
+
+  form .field input {
+    width: 300px;
+    color: black;
+  }  
+
+  #user_remember_me {
+    width: 30px;
+  }
+
+  .login-header {
+    clear: both;
+    padding-bottom: 10px;
+  }
+
+  .login {
+    clear: both;
+    margin-top: 300px;
+    background-color: $translucent;
+
+    input {
+      background: none;
+      border: 3px solid white;
+      font-variant: small-caps;
+      color: white;
+      font-weight: bolder;
+      font-size: 18px;
+      margin: 5px auto;
+    }
+  }
+
+  .signup {
+    clear: both;
+    margin-top: 300px;
+    background-color: $translucent;
+
+    input {
+      background: none;
+      border: 3px solid white;
+      font-variant: small-caps;
+      color: white;
+      font-weight: bolder;
+      font-size: 18px;
+      margin: 5px auto;
+    }
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  body {
+    background-size: 100%;
+  }
 }
 

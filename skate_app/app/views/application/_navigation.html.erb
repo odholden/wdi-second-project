@@ -12,8 +12,9 @@
         <li><%= link_to 'home', root_path %></li>
         <li><%= link_to 'users', users_path %></li>
         <li><%= link_to 'new video', new_video_path %></li>
-        <li><%= link_to 'logout', destroy_user_session_path %></li>
+        <li><%= link_to 'logout', destroy_user_session_path, method: :delete %></li>
       </ul>
     </section>
   </nav>
 </div>
+
