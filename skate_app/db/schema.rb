@@ -11,10 +11,42 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151101235814) do
+ActiveRecord::Schema.define(version: 20151102005936) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "cities", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "country_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "cities", ["country_id"], name: "index_cities_on_country_id", using: :btree
+
+  create_table "countries", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "tricks", force: :cascade do |t|
+    t.integer  "video_id"
+    t.string   "comment"
+    t.integer  "fame"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "tricks", ["video_id"], name: "index_tricks_on_video_id", using: :btree
+
+  create_table "types", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "difficulty"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -38,4 +70,30 @@ ActiveRecord::Schema.define(version: 20151101235814) do
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
+  create_table "vehicles", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "videos", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "vehicle_id"
+    t.integer  "city_id"
+    t.string   "title"
+    t.text     "description"
+    t.string   "url"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  add_index "videos", ["city_id"], name: "index_videos_on_city_id", using: :btree
+  add_index "videos", ["user_id"], name: "index_videos_on_user_id", using: :btree
+  add_index "videos", ["vehicle_id"], name: "index_videos_on_vehicle_id", using: :btree
+
+  add_foreign_key "cities", "countries"
+  add_foreign_key "tricks", "videos"
+  add_foreign_key "videos", "cities"
+  add_foreign_key "videos", "users"
+  add_foreign_key "videos", "vehicles"
 end
