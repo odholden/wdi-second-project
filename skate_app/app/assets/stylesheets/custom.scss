@@ -9,6 +9,10 @@ body {
   background-repeat: no-repeat;
   text-align: center;
 
+  .content {
+    
+  }
+
   label {
     font-variant: small-caps;
     color: white;
@@ -49,7 +53,7 @@ body {
   }  
 
   #user_remember_me {
-    width: 30px;
+    width: 10px;
   }
 
   .login-header {
@@ -59,8 +63,11 @@ body {
 
   .login {
     clear: both;
-    margin-top: 300px;
     background-color: $translucent;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+
 
     input {
       background: none;
@@ -75,8 +82,10 @@ body {
 
   .signup {
     clear: both;
-    margin-top: 300px;
     background-color: $translucent;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
 
     input {
       background: none;
