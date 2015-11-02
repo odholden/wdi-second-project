@@ -2,7 +2,7 @@ User.destroy_all    #
 City.destroy_all    #
 Country.destroy_all #
 Trick.destroy_all
-Type.destroy_all
+Type.destroy_all    #
 Vehicle.destroy_all #
 Video.destroy_all
 
@@ -18,20 +18,20 @@ u_alva  = User.create(email: 'tony@alva.com', password: 'password', image: 'alva
 # VIDEOS
 v1 = Video.create(user_id: u_ollie.id, vehicle_id: v_skateboard.id, city_id: city_london.id, title: '', description: '', url: '')
 v2 = Video.create(user_id: u_ollie.id, vehicle_id: v_skateboard.id, city_id: city_london.id, title: '', description: '', url: '')
-v3 = Video.create(user_id: u_ollie.id, vehicle_id: v_skateboard.id, city_id: city_london.id, title: '', description: '', url: '')
-v4 = Video.create(user_id: u_ollie.id, vehicle_id: v_skateboard.id, city_id: city_london.id, title: '', description: '', url: '')
-v5 = Video.create(user_id: u_ollie.id, vehicle_id: v_skateboard.id, city_id: city_london.id, title: '', description: '', url: '')
-v6 = Video.create(user_id: u_ollie.id, vehicle_id: v_skateboard.id, city_id: city_london.id, title: '', description: '', url: '')
-v7 = Video.create(user_id: u_guus.id, vehicle_id: v_skateboard.id, city_id: city_london.id, title: '', description: '', url: '')
-v8 = Video.create(user_id: u_ben.id, vehicle_id: v_skateboard.id, city_id: city_london.id, title: '', description: '', url: '')
-v9 = Video.create(user_id: u_ollie.id, vehicle_id: v_skateboard.id, city_id: city_london.id, title: '', description: '', url: '')
-v10 = Video.create(user_id: u_ollie.id, vehicle_id: v_skateboard.id, city_id: city_london.id, title: '', description: '', url: '')
-v11 = Video.create(user_id: u_ollie.id, vehicle_id: v_skateboard.id, city_id: city_london.id, title: '', description: '', url: '')
-v12 = Video.create(user_id: u_ollie.id, vehicle_id: v_skateboard.id, city_id: city_london.id, title: '', description: '', url: '')
-v13 = Video.create(user_id: u_ollie.id, vehicle_id: v_skateboard.id, city_id: city_london.id, title: '', description: '', url: '')
-v14 = Video.create(user_id: u_ollie.id, vehicle_id: v_skateboard.id, city_id: city_london.id, title: '', description: '', url: '')
-v15 = Video.create(user_id: u_ollie.id, vehicle_id: v_skateboard.id, city_id: city_london.id, title: '', description: '', url: '')
-v16 = Video.create(user_id: u_ollie.id, vehicle_id: v_skateboard.id, city_id: city_london.id, title: '', description: '', url: '')
+v3 = Video.create(user_id: u_ollie.id, vehicle_id: v_skateboard.id, city_id: city_barca.id, title: '', description: '', url: '')
+v4 = Video.create(user_id: u_ollie.id, vehicle_id: v_skateboard.id, city_id: city_barca.id, title: '', description: '', url: '')
+v5 = Video.create(user_id: u_ollie.id, vehicle_id: v_skateboard.id, city_id: city_sanfran.id, title: '', description: '', url: '')
+v6 = Video.create(user_id: u_ollie.id, vehicle_id: v_skateboard.id, city_id: city_nyc.id, title: '', description: '', url: '')
+v7 = Video.create(user_id: u_guus.id, vehicle_id: v_skateboard.id, city_id: city_amster.id, title: '', description: '', url: '')
+v8 = Video.create(user_id: u_ben.id, vehicle_id: v_skateboard.id, city_id: city_prague.id, title: '', description: '', url: '')
+v9 = Video.create(user_id: u_gyom.id, vehicle_id: v_skateboard.id, city_id: city_paris.id, title: '', description: '', url: '')
+v10 = Video.create(user_id: u_tony.id, vehicle_id: v_skateboard.id, city_id: city_seattle.id, title: '', description: '', url: '')
+v11 = Video.create(user_id: u_tony.id, vehicle_id: v_skateboard.id, city_id: city_portland.id, title: '', description: '', url: '')
+v12 = Video.create(user_id: u_tony.id, vehicle_id: v_skateboard.id, city_id: city_la.id, title: '', description: '', url: '')
+v13 = Video.create(user_id: u_eric.id, vehicle_id: v_skateboard.id, city_id: city_la.id, title: '', description: '', url: '')
+v14 = Video.create(user_id: u_eric.id, vehicle_id: v_skateboard.id, city_id: city_budapest.id, title: '', description: '', url: '')
+v15 = Video.create(user_id: u_alva.id, vehicle_id: v_skateboard.id, city_id: city_rome.id, title: '', description: '', url: '')
+v16 = Video.create(user_id: u_alva.id, vehicle_id: v_skateboard.id, city_id: city_barca.id, title: '', description: '', url: '')
 
 
 # TRICKS  
