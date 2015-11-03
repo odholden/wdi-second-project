@@ -1,3 +1,15 @@
+.videoshow {
+  background: $translucent;
+
+  h2 {
+    padding-top: 0;
+  }
+
+  a {
+    color: black;
+  }
+}
+
 iframe {
   width: 900px;
   height: 522px;
