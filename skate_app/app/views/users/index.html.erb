@@ -1,0 +1,9 @@
+<% @users.each do |user| %>
+  <div class="userinfo">
+    <%= link_to image_tag(user.image), user_path %>
+    <div class="usernamefame">
+      <h3><%= user.username %></h3>
+      <p>fame <%= user.fame %></p>
+    </div>
+  </div>
+<% end %>

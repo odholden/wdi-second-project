@@ -16,20 +16,28 @@ h3 {
 }
 
 .userinfo {
-  text-align: left;
-  display: inline-block;
+  text-align: right;
+  position: inline-block;  
+  width: 300px;
+  height: 100px;
+  background: $translucent;
+  left: 3%;
+  top: 50px;
 
   img {
-    max-height: 70px;
-    max-width: 70px;
+    max-height: 90px;
+    max-width: 90px;
     float: left;
-    border: 3px solid white;
-    left: 20px;
+    border: 3px solid black;
+    margin: 5px;
   }
 
   .usernamefame {
+    padding: 5px;
+
     h3, p {
-      padding: 5px;
+      padding: 10px;
+      margin: 0;
     }
   }
 }
@@ -38,7 +46,7 @@ h3 {
   color: black;
 
   .videobox {
-    background-color: rgba(255,255,255,0.8);
+    background-color: $translucent;
     width: 900px;
     display: inline-block;
     margin: 10px auto;
@@ -67,6 +75,29 @@ h3 {
 }
 
 @media only screen and (max-width: 960px) {
+
+  .userinfo {
+    width: 200px;
+    height: 80px;
+
+    img {
+      max-height: 70px;
+      max-width: 70px;
+      float: left;
+      border: 3px solid black;
+      margin: 5px;
+    }
+
+    .usernamefame {
+      padding: 5px;
+
+      h3, p {
+        padding: 0px;
+        margin: 0;
+      }
+    }
+  }
+
   .home_videos {
     .videobox {
       width: 95vw;
