@@ -1,9 +1,18 @@
 <p id="notice"><%= notice %></p>
 
+<iframe src="http://www.youtube.com/embed/<%= @video.url %>"></iframe>
 <div class="videoshow">
   <h2><%= @video.title %></h2>
-  <iframe src="http://www.youtube.com/embed/<%= @video.url %>"></iframe>
-  <h3><%= @video.description %></h3>
+  <p><%= @video.description %></p>
   <%= link_to 'EDIT', edit_video_path(@video) %> |
-  <%= link_to 'DELETE', method: :destroy %>
+  <%= link_to 'DELETE', method: :destroy %> <br><br>
+  <div class="trickshow">
+    <h3>tricks.</h3>
+    <% @tricks.each do |trick| %>
+      <p><%= trick.type_id %></p>
+      <p><%= trick.timestamp %></p>
+      <p><%= trick.comment %></p>
+  
+    <% end %>
+  </div>
 </div>
