@@ -8,6 +8,13 @@
   <%= link_to 'DELETE', method: :destroy %> <br><br>
   <div class="trickshow">
     <h3>tricks.</h3>
-    <%= @tricks %>
+    <% @tricks.each do |trick| %>
+      <% if trick.video_id == @video.id %>
+        <%= trick.types.name.capitalize %>
+        <%= trick.timestamp.to_s %>
+        <%= trick.comment %>
+      <% else %>
+      <% end %>
+    <% end %>
   </div>
 </div>

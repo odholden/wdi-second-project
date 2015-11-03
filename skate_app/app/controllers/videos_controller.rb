@@ -6,7 +6,7 @@ class VideosController < ApplicationController
   end
 
   def show
-    @tricks = Trick.find(params :video_id)
+    @tricks = Trick.all
   end
 
   def new

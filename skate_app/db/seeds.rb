@@ -190,13 +190,13 @@ v16 = Video.create(user_id: u_alva.id, vehicle_id: v_skateboard.id, city_id: cit
 v17 = Video.create(user_id: u_calum.id, vehicle_id: v_skateboard.id, city_id: city_birm.id, title: 'best sk8 vid eva 2k9', description: 'i rip it up big time styley', url: 'mYd0ee3ST8M')
 
 # TRICKS  
-t1 = Trick.create(video_id: v1.id, comment: 'gnarly dude', timestamp: '0:18')
-t2 = Trick.create(video_id: v1.id, comment: 'gnarly dude', timestamp: '0:25')
-t3 = Trick.create(video_id: v1.id, comment: 'gnarly dude', timestamp: '0:31')
-t4 = Trick.create(video_id: v1.id, comment: 'gnarly dude', timestamp: '0:33')
-t5 = Trick.create(video_id: v1.id, comment: 'gnarly dude', timestamp: '1:20')
-t6 = Trick.create(video_id: v1.id, comment: 'gnarly dude', timestamp: '1:24')
-t7 = Trick.create(video_id: v1.id, comment: 'gnarly dude', timestamp: '1:33')
+t1 = Trick.create(video_id: v1.id, comment: 'gnarly dude', timestamp: '0:00:18')
+t2 = Trick.create(video_id: v1.id, comment: 'gnarly dude', timestamp: '0:00:25')
+t3 = Trick.create(video_id: v1.id, comment: 'gnarly dude', timestamp: '0:00:31')
+t4 = Trick.create(video_id: v1.id, comment: 'gnarly dude', timestamp: '0:00:33')
+t5 = Trick.create(video_id: v1.id, comment: 'gnarly dude', timestamp: '0:01:20')
+t6 = Trick.create(video_id: v1.id, comment: 'gnarly dude', timestamp: '0:01:24')
+t7 = Trick.create(video_id: v1.id, comment: 'gnarly dude', timestamp: '0:01:33')
 
 t1.types << manual
 t2.types << ollie
@@ -205,6 +205,7 @@ t4.types << _180
 t5.types << _180_heelflip
 t6.types << varial_heelflip
 t7.types << boardslide
+t7.types << _180
 
 
 
