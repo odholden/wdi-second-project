@@ -5,7 +5,7 @@
     background-color: rgba(255,255,255,0.8);
     width: 900px;
     display: inline-block;
-    margin: 0 auto;
+    margin: 10px auto;
 
     h2 {
       font-size: 30px;
@@ -20,7 +20,7 @@
       letter-spacing: -1px;
       display: inline-block;
       text-align: right;
-      padding: 20px;  
+      padding: 0px 20px;  
 
     }
 
@@ -43,12 +43,39 @@
       float: right;
       width: 450px;
       display: inline-block;
+    }
+  }
+}
 
+@media only screen and (max-width: 960px) {
+  .home_videos {
+    .videobox {
+      width: 95vw;
 
       h2 {
+        font-size: 20px;
+        letter-spacing: -1px;
+        padding: 5px;  
+      }
 
+      h3 {
+        display: none;
+      }
+
+      .left {
+        width: 47.5vw;
+
+        iframe {
+          width: 42vw;
+          height: 23.6vw; 
+          margin: 5px;
+          border: 2px solid black;
+        }
+      }
+
+      .right {
+        width: 47.5vw;
       }
     }
-
   }
 }
