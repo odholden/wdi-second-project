@@ -26,25 +26,7 @@ form .field input {
   padding-bottom: 10px;
 }
 
-.login {
-  clear: both;
-  background-color: $transblack;
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
-
-  input {
-    background: none;
-    border: 3px solid white;
-    font-variant: small-caps;
-    color: white;
-    font-weight: bolder;
-    font-size: 18px;
-    margin: 5px auto;
-  }
-}
-
-.signup {
+.formblock {
   clear: both;
   background-color: $transblack;
   position: absolute;
