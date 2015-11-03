@@ -6,13 +6,16 @@
   <p><%= @video.description %></p>
   <%= link_to 'EDIT', edit_video_path(@video) %> |
   <%= link_to 'DELETE', method: :destroy %> <br><br>
+  <h3>tricks.</h3>
   <div class="trickshow">
-    <h3>tricks.</h3>
     <% @tricks.each do |trick| %>
       <% if trick.video_id == @video.id %>
-        <%= trick.types.name.capitalize %>
-        <%= trick.timestamp.to_s %>
+        <%= trick.timestamp.strftime("%M:%S") %>
+        <% trick.types.each do |type| %>
+          <%= type.name.capitalize %>
+        <% end %>
         <%= trick.comment %>
+        <br>
       <% else %>
       <% end %>
     <% end %>

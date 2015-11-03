@@ -190,13 +190,13 @@ v16 = Video.create(user_id: u_alva.id, vehicle_id: v_skateboard.id, city_id: cit
 v17 = Video.create(user_id: u_calum.id, vehicle_id: v_skateboard.id, city_id: city_birm.id, title: 'best sk8 vid eva 2k9', description: 'i rip it up big time styley', url: 'mYd0ee3ST8M')
 
 # TRICKS  
-t1 = Trick.create(video_id: v1.id, comment: 'gnarly dude', timestamp: '0:00:18')
-t2 = Trick.create(video_id: v1.id, comment: 'gnarly dude', timestamp: '0:00:25')
-t3 = Trick.create(video_id: v1.id, comment: 'gnarly dude', timestamp: '0:00:31')
-t4 = Trick.create(video_id: v1.id, comment: 'gnarly dude', timestamp: '0:00:33')
-t5 = Trick.create(video_id: v1.id, comment: 'gnarly dude', timestamp: '0:01:20')
-t6 = Trick.create(video_id: v1.id, comment: 'gnarly dude', timestamp: '0:01:24')
-t7 = Trick.create(video_id: v1.id, comment: 'gnarly dude', timestamp: '0:01:33')
+t1 = Trick.create(video_id: v1.id, comment: 'gnarly dude', timestamp: '00:00:18')
+t2 = Trick.create(video_id: v1.id, comment: 'gnarly dude', timestamp: '00:00:25')
+t3 = Trick.create(video_id: v1.id, comment: 'gnarly dude', timestamp: '00:00:31')
+t4 = Trick.create(video_id: v1.id, comment: 'gnarly dude', timestamp: '00:00:33')
+t5 = Trick.create(video_id: v1.id, comment: 'gnarly dude', timestamp: '00:01:20')
+t6 = Trick.create(video_id: v1.id, comment: 'gnarly dude', timestamp: '00:01:24')
+t7 = Trick.create(video_id: v1.id, comment: 'gnarly dude', timestamp: '00:01:33')
 
 t1.types << manual
 t2.types << ollie
