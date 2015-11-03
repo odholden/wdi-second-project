@@ -1,3 +1,39 @@
+h2 {
+  font-size: 30px;
+  letter-spacing: -2px;
+  display: inline-block;
+  text-align: right;
+  padding: 20px;  
+}
+
+h3 {
+  font-size: 20px;
+  letter-spacing: -1px;
+  display: inline-block;
+  text-align: right;
+  padding: 0px 20px;  
+
+}
+
+.userinfo {
+  text-align: left;
+  display: inline-block;
+
+  img {
+    max-height: 70px;
+    max-width: 70px;
+    float: left;
+    border: 3px solid white;
+    left: 20px;
+  }
+
+  .usernamefame {
+    h3, p {
+      padding: 5px;
+    }
+  }
+}
+
 .home_videos {
   color: black;
 
@@ -6,23 +42,6 @@
     width: 900px;
     display: inline-block;
     margin: 10px auto;
-
-    h2 {
-      font-size: 30px;
-      letter-spacing: -2px;
-      display: inline-block;
-      text-align: right;
-      padding: 20px;  
-    }
-
-    h3 {
-      font-size: 20px;
-      letter-spacing: -1px;
-      display: inline-block;
-      text-align: right;
-      padding: 0px 20px;  
-
-    }
 
     .left {
       float: left;
@@ -51,6 +70,7 @@
   .home_videos {
     .videobox {
       width: 95vw;
+      margin: 4px auto;
 
       h2 {
         font-size: 20px;
