@@ -10,6 +10,7 @@ class VideosController < ApplicationController
 
   def new
     @video = Video.new
+    @video.user_id = current_user.id if current_user
   end
 
   def edit

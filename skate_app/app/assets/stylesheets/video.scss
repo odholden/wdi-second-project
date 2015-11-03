@@ -1,0 +1,11 @@
+iframe {
+  width: 900px;
+  height: 522px;
+}
+
+@media only screen and (max-width: 960px) {
+  iframe {
+    width: 100%;
+    height: 56.25vw;
+  }
+}
