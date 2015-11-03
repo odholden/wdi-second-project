@@ -20,7 +20,7 @@ backside_heelflip  = Type.create(name: 'Backside Heelflip', difficulty: '')
 camel_flip         = Type.create(name: 'Camel Flip', difficulty: '')
 casper_flip        = Type.create(name: 'Casper Flip', difficulty: '')
 de_comply          = Type.create(name: 'De Comply', difficulty: '')
-540_flip           = Type.create(name: '540 Flip', difficulty: '')
+_540_flip          = Type.create(name: '540 Flip', difficulty: '')
 frontside_flip     = Type.create(name: 'Frontside Flip', difficulty: '')
 frontside_heelflip = Type.create(name: 'Frontside Heelflip', difficulty: '')
 hardflip           = Type.create(name: 'Hardflip', difficulty: '')
@@ -30,19 +30,19 @@ kickflip           = Type.create(name: 'Kickflip', difficulty: '')
 no_comply          = Type.create(name: 'No Comply', difficulty: '')
 ollie              = Type.create(name: 'Ollie', difficulty: '')
 pop_shuvit         = Type.create(name: 'Pop Shuvit', difficulty: '')
-720_flip           = Type.create(name: '720 Flip', difficulty: '')
+_720_flip          = Type.create(name: '720 Flip', difficulty: '')
 shuvit             = Type.create(name: 'Shuvit', difficulty: '')
-360_flip           = Type.create(name: '360 Flip', difficulty: '')
-360_shuvit         = Type.create(name: '360 Shuvit', difficulty: '')
-360_heelflip       = Type.create(name: '360 Ollie Heelflip', difficulty: '')
-360_kickflip       = Type.create(name: '360 Ollie Kickflip', difficulty: '')
+_360_flip          = Type.create(name: '360 Flip', difficulty: '')
+_360_shuvit        = Type.create(name: '360 Shuvit', difficulty: '')
+_360_heelflip      = Type.create(name: '360 Ollie Heelflip', difficulty: '')
+_360_kickflip      = Type.create(name: '360 Ollie Kickflip', difficulty: '')
 varial_heelflip    = Type.create(name: 'Varial Heelflip', difficulty: '')
 varial_kickflip    = Type.create(name: 'Varial Kickflip', difficulty: '')
 bluntside          = Type.create(name: 'Bluntslide', difficulty: '')
 boardslide         = Type.create(name: 'Boardslide', difficulty: '')
 crooked_grind      = Type.create(name: 'Crooked Grind', difficulty: '')
 darkslide          = Type.create(name: 'Darkslide', difficulty: '')
-50_grind           = Type.create(name: '5-0 Grind', difficulty: '')
+_50_grind          = Type.create(name: '5-0 Grind', difficulty: '')
 lipslide           = Type.create(name: 'Lipslide', difficulty: '')
 noseblunt_slide    = Type.create(name: 'Noseblunt Slide', difficulty: '')
 nosegrind          = Type.create(name: 'Nosegrind', difficulty: '')
@@ -94,6 +94,7 @@ one_foot_manual    = Type.create(name: 'One Foot Manual', difficulty: '')
 one_wheel_manual   = Type.create(name: 'One Wheel Manual', difficulty: '')
 rool_in            = Type.create(name: 'Roll In', difficulty: '')
 tictac             = Type.create(name: 'Tic-Tac', difficulty: '')
+_180_heelflip      = Type.create(name: '180 Heelflip', difficulty: '')
 
 # COUNTRIES
 c_usa     = Country.create(name: 'usa')
@@ -167,6 +168,7 @@ u_gyom  = User.create(email: 'gyom@french.com', password: 'password', image: 'gy
 u_tony  = User.create(email: 'tony@hawk.com', password: 'password', image: 'tony.png', username: 'tonyhawk', fame:'35000')
 u_eric  = User.create(email: 'eric@koston.com', password: 'password', image: 'eric.png', username: 'erickoston', fame:'10000')
 u_alva  = User.create(email: 'tony@alva.com', password: 'password', image: 'alva.png', username: 'tonyalva', fame:'13000')
+u_calum = User.create(email: 'calum@skater.com', password: 'password', image: 'calum.png', username: 'calza', fame:'350000')
 
 # VIDEOS
 v1 = Video.create(user_id: u_ollie.id, vehicle_id: v_skateboard.id, city_id: city_london.id, title: 'day trip', description: 'went to some tourist spots for some gnarly hardcore action dude', url: 'XaC2-Y7YvbA')
@@ -185,10 +187,27 @@ v13 = Video.create(user_id: u_eric.id, vehicle_id: v_skateboard.id, city_id: cit
 v14 = Video.create(user_id: u_eric.id, vehicle_id: v_skateboard.id, city_id: city_la.id, title: 'off the grid', description: 'had enough of my stressful pro skater lifestyle, so went off on my own', url: 'bSBWG9roUD8')
 v15 = Video.create(user_id: u_alva.id, vehicle_id: v_skateboard.id, city_id: city_rome.id, title: 'pipes', description: 'found some great pipes with my friends in the 70s, basically invented this whole thing. i think its a big deal', url: 'o7rK6lxVJK0')
 v16 = Video.create(user_id: u_alva.id, vehicle_id: v_skateboard.id, city_id: city_la.id, title: 'venice beach', description: 'a return to the birth of it all', url: 'aLdRu0fG1zY')
-
+v17 = Video.create(user_id: u_calum.id, vehicle_id: v_skateboard.id, city_id: city_birm.id, title: 'best sk8 vid eva 2k9', description: 'i rip it up big time styley', url: 'mYd0ee3ST8M')
 
 # TRICKS  
-t1 = Trick.create(video_id: v1.id, comment: 'gnarly dude', timestamp: '')
+t1 = Trick.create(video_id: v1.id, comment: 'gnarly dude', timestamp: '0:18')
+t2 = Trick.create(video_id: v1.id, comment: 'gnarly dude', timestamp: '0:25')
+t3 = Trick.create(video_id: v1.id, comment: 'gnarly dude', timestamp: '0:31')
+t4 = Trick.create(video_id: v1.id, comment: 'gnarly dude', timestamp: '0:33')
+t5 = Trick.create(video_id: v1.id, comment: 'gnarly dude', timestamp: '1:20')
+t6 = Trick.create(video_id: v1.id, comment: 'gnarly dude', timestamp: '1:24')
+t7 = Trick.create(video_id: v1.id, comment: 'gnarly dude', timestamp: '1:33')
+
+t1.types << manual
+t2.types << ollie
+t3.types << _360_flip
+t4.types << _180
+t5.types << _180_heelflip
+t6.types << varial_heelflip
+t7.types << boardslide
+
+
+
 
 
 
