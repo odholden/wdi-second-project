@@ -8,11 +8,5 @@
   <%= link_to 'DELETE', method: :destroy %> <br><br>
   <div class="trickshow">
     <h3>tricks.</h3>
-    <% @tricks.each do |trick| %>
-      <p><%= trick.type_id %></p>
-      <p><%= trick.timestamp %></p>
-      <p><%= trick.comment %></p>
-  
-    <% end %>
   </div>
 </div>
