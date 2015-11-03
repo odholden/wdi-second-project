@@ -1,8 +1,8 @@
 <div class="userinfo">
-  <%= image_tag @user.image %>
+  <%= image_tag current_user.image %>
   <div class="usernamefame">
-    <h3><%= @user.username %></h3>
-    <p>fame <%= @user.fame %></p>
+    <h3><%= current_user.username %></h3>
+    <p>fame <%= current_user.fame %></p>
   </div>
 </div>
 <h2>HOME.</h2>

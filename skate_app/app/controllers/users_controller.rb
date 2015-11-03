@@ -5,7 +5,8 @@ class UsersController < ApplicationController
   end
 
   def show
-    @videos = Video.where(user_id: user.id)
+    @user   = User.find(params[:id])
+    @videos = @user.videos
   end
 
 end

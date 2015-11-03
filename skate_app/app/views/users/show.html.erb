@@ -1,0 +1,10 @@
+<div class="userinfo">
+  <%= image_tag @user.image %>
+  <div class="usernamefame">
+    <p>fame <%= @user.fame %></p>
+  </div>
+</div>
+
+<h2><%= @user.username.capitalize + '.' %></h2>
+
+<%= render @videos %>
