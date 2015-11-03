@@ -10,7 +10,9 @@
       <h2><%= video.title %></h2>
       <h3><%= video.description %></h3> 
       <div class="buttons">
-        <%= button_to "edit", users_path, :method => "get" %>
+        <% if @user = current_user %>
+          <%= button_to "edit", edit_video_path(video.id), :method => "get" %>
+        <% end %>
       </div>    
     </div>
   </div>
