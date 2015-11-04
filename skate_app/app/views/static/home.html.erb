@@ -6,7 +6,7 @@
   <% end %>  
   <div class="usernamefame">
     <h3><%= current_user.username %></h3>
-    <p>fame <%= current_user.fame %></p>
+    <p>fame <%= @fame %></p>
     <%= button_to "new video", new_video_path, :method => "get" %>
   </div>
 </div>
