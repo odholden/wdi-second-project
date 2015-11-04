@@ -1,22 +1,20 @@
 <div class="home_videos">  
   <% @videos.each do |video| %>
-  <div class="videobox">
-    <div class="left">
+  <ul class="small-block-grid-2 medium-block-grid-2 large-block-grid-2 videobox">
+    <li class="left">
       <a href="/videos/<%= video.id %>">
         <div class="thumbnail">
           <img src="http://img.youtube.com/vi/<%= video.url %>/hqdefault.jpg">
         </div>
       </a>
-    </div>
-    <div class="right">
+    </li>
+    <li class="right">
       <h2><%= video.title %></h2>
       <h3><%= video.description %></h3> 
-      <div class="buttons">
-        <% if current_page? root_path %>
-          <%= button_to "EDIT.", edit_video_path(video.id), :method => "get" %>
-        <% end %>
-      </div>    
-    </div>
-  </div>
+      <% if current_page? root_path %>
+        <%= button_to "EDIT.", edit_video_path(video.id), :method => "get" %>
+      <% end %>
+    </li>
+  </ul>
   <% end %>
 </div>
