@@ -45,7 +45,12 @@ form .field input {
 }
 
 .newvideo {
-  
+  .formblock {
+    position: relative;
+    display: inline-block;
+    bottom: none;
+    margin-top: 15px;
+  }
 }
 
 @media only screen and (max-width: 960px) {
