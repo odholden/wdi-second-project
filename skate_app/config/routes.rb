@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'countries/index'
+
+  get 'countries/show'
+
   root 'static#home'
 
   resources :videos do
