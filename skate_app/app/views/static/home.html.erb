@@ -1,5 +1,9 @@
 <div class="userinfo">
-  <%= image_tag current_user.graffiti_image %>
+  <% if current_user.graffiti_image.present? %>
+    <%= image_tag current_user.graffiti_image.url %>
+  <% else %>
+    <%= image_tag current_user.image %>
+  <% end %>  
   <div class="usernamefame">
     <h3><%= current_user.username %></h3>
     <p>fame <%= current_user.fame %></p>
@@ -9,3 +13,5 @@
 <h2>HOME.</h2>
 
 <%= render @videos %>
+
+

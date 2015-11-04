@@ -1,6 +1,6 @@
 <div class="userinfo">
-<% if @user.graffiti_image %>
-  <%= image_tag @user.graffiti_image %>
+<% if @user.graffiti_image.present? %>
+  <%= image_tag @user.graffiti_image.url %>
 <% else %>
   <%= image_tag @user.image %>
 <% end %>

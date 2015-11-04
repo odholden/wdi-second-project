@@ -1,5 +1,4 @@
 class UsersController < ApplicationController
-  mount_uploader :graffiti_image, GraffitiImageUploader
 
   def index
     @users = User.all

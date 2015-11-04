@@ -1,6 +1,8 @@
 class VideosController < ApplicationController
   before_action :set_video, only: [:show, :edit, :update, :destroy]
 
+  mount_uploader :graffiti_image, GraffitiImageUploader
+
   def index
     @videos = Video.all.shuffle
   end
