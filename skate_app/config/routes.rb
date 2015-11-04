@@ -1,9 +1,5 @@
 Rails.application.routes.draw do
 
-  get 'cities/index'
-
-  get 'cities/show'
-
   root 'static#home'
 
   resources :videos do
@@ -15,6 +11,8 @@ Rails.application.routes.draw do
   devise_for :users
   resources :users, only: :show 
   get '/users', to: 'users#index'
-  get '/about', to: 'static#about'
+
+  resources :cities, only: :show 
+  get '/cities', to: 'cities#index'
 
 end
