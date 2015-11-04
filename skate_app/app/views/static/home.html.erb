@@ -1,3 +1,4 @@
+<h1>HOME.</h1>
 <div class="userinfo">
   <% if current_user.graffiti_image.present? %>
     <%= image_tag current_user.graffiti_image.url %>
@@ -10,7 +11,6 @@
     <%= button_to "NEW VIDEO.", new_video_path, :method => "get" %>
   </div>
 </div>
-<h1>HOME.</h1>
 
 <%= render @videos %>
 
