@@ -1,3 +1,19 @@
-// Place all the styles related to the cities controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.city_tile {
+  width: 90%;
+  height: 20vh;
+  display: inline-block;
+  background-color: $transblack;
+  position: relative;
+
+    img {
+      width: 100%;
+    }
+
+    h2 {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      color: white;
+      max-width: none;
+    }
+}
