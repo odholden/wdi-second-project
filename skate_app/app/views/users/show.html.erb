@@ -1,5 +1,9 @@
 <div class="userinfo">
+<% if @user.graffiti_image %>
   <%= image_tag @user.graffiti_image %>
+<% else %>
+  <%= image_tag @user.image %>
+<% end %>
   <div class="usernamefame">
     <p>fame <%= @user.fame %></p>
   </div>
