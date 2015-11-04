@@ -3,14 +3,13 @@
   <ul class="small-block-grid-2 medium-block-grid-2 large-block-grid-2 videobox">
     <li class="left">
       <a href="/videos/<%= video.id %>">
-        <div class="thumbnail">
           <img src="http://img.youtube.com/vi/<%= video.url %>/hqdefault.jpg">
-        </div>
       </a>
     </li>
     <li class="right">
       <h2><%= video.title %></h2>
       <h3><%= video.description %></h3> 
+      <p>fame <%= video.get_likes.size %></p>
       <% if current_page? root_path %>
         <%= button_to "EDIT.", edit_video_path(video.id), :method => "get" %>
       <% end %>
