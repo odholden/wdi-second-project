@@ -1,9 +1,9 @@
-User.destroy_all    #
-City.destroy_all    #
-Country.destroy_all #
+User.destroy_all    
+City.destroy_all    
+Country.destroy_all 
 Trick.destroy_all
-Type.destroy_all    #
-Vehicle.destroy_all #
+Type.destroy_all    
+Vehicle.destroy_all 
 Video.destroy_all
 
 # VEHICLES
