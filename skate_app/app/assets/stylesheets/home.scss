@@ -22,7 +22,6 @@ h3 {
   position: inline-block;  
   width: 300px;
   height: 100px;
-  background: $translucent;
   margin-left: 5px;
   top: 50px;
   float: left;
@@ -58,7 +57,6 @@ h3 {
   color: black;
 
   .videobox {
-    background-color: $translucent;
     width: 900px;
     display: inline-block;
     margin: 10px auto;
@@ -74,7 +72,6 @@ h3 {
         width: 400px;
         height: 225px; 
         margin: 10px;
-        border: 4px solid black;
       }
     }
 
@@ -138,11 +135,23 @@ h3 {
       .left {
         width: 47.5vw;
 
-        img {
-          width: 42vw;
-          height: 23.6vw; 
+        .thumbnail {
+          width: 45vw;
+          height: 25.3vw; 
           margin: 5px;
-          border: 2px solid black;
+          overflow: hidden;
+          position: relative;
+
+          img {
+            position: absolute;
+            margin: auto;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0; 
+            width:100%;  
+            height: 100%;       
+          }
         }
       }
 
