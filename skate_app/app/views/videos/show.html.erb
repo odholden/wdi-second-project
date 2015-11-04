@@ -3,6 +3,7 @@
 <div class="videoshow">
   <h2><%= @video.title %></h2>
   <h3>fame <%= @video.votes_for.size %></h3>
+  <%= link_to "Upvote", like_video_path(@video), method: :put %>
   <p><%= @video.description %></p>
   <%= link_to 'EDIT', edit_video_path(@video) %> |
   <%= link_to 'DELETE', method: :destroy %> <br><br>
