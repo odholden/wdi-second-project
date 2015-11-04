@@ -1,5 +1,5 @@
 <div class="userinfo">
-  <%= image_tag @user.image %>
+  <%= image_tag @user.graffiti_image.url %>
   <div class="usernamefame">
     <p>fame <%= @user.fame %></p>
   </div>
@@ -8,3 +8,6 @@
 <h2><%= @user.username.capitalize + '.' %></h2>
 
 <%= render @videos %>
+
+
+
