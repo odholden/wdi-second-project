@@ -1,3 +1,4 @@
+
 <div class="formblock">
   <%= form_for(@video) do |f| %>
     <% if @video.errors.any? %>
@@ -17,11 +18,11 @@
       <%= f.collection_select(:vehicle_id, Vehicle.all, :id, :name) %>
     </div>
     <div class="field">
-      <%= f.label :country_id %><br>
+      <label for="video_country_id">country</label><br>
       <%= f.collection_select(:country_id, Country.all, :id, :name) %>
     </div>
-    <div class="field">
-      <%= f.label :city_id %><br>
+    <div class="field" id="city_field">
+      <label for="video_state_id">city</label><br>
       <%= f.collection_select(:city_id, City.all, :id, :name) %>
     </div>
     <div class="field">

@@ -10,6 +10,7 @@ class VideosController < ApplicationController
   end
 
   def new
+    @cities = City.all
     @video = Video.new
     @video.user_id = current_user.id if current_user
   end

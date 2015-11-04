@@ -1,0 +1,20 @@
+var cities = [];
+<% @cities.each do |city| %>
+  cities.push(new Array(<%= city.country_id %>, '<%=h city.name %>', <%= city.id %>));
+<% end %>
+
+function countrySelected() {
+  country_id = $('video_country_id').getValue();
+  options = $('video_city_id').options;
+  options.length = 1;
+  cities.each(function(city) {
+    if (city[0] == country_id) {
+      options[options.length] = new Option(city[1], city[2]);   
+    }
+  });
+}
+
+document.observe('dom:loaded', function() {
+  countrySelected();
+  $('video_country_id').observe('change', countrySelected);
+});
