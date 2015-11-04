@@ -1,2 +1,15 @@
-<h1>Countries#show</h1>
-<p>Find me in app/views/countries/show.html.erb</p>
+<h1>CITIES.</h1>
+
+<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3">
+  <% @cities.each do |city| %>
+    <% if city.country_id == @country.id %>
+    <li>
+      <div class="display_tile">
+        <%= link_to image_tag(city.image), city_path(city.id) %>
+        <h2><%= city.name %></h2>
+      </div>
+    </li>
+    <% else %>
+    <% end %>
+  <% end %>
+</ul>

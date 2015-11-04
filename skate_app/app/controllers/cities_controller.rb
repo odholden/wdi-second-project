@@ -5,6 +5,7 @@ class CitiesController < ApplicationController
   end
 
   def show
-    @city   = User.find(params[:id])
+    @city = City.find(params[:id])
+    @videos = Video.where(city_id: @city.id)
   end
 end

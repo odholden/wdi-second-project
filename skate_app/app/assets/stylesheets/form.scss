@@ -1,3 +1,15 @@
+.content {
+  background-image: url('bg1.png');
+  background-size: 960px;
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: black;
+  z-index: -2;
+}
+
 label {
   font-variant: small-caps;
   color: white;
@@ -61,6 +73,11 @@ form .field input {
 
 @media only screen and (max-width: 960px) {
   body {
+
+    .content {
+      background-size: 100%;
+
+    }
 
     a label {
       font-size: 14px;

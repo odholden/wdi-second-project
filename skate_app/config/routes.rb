@@ -19,4 +19,7 @@ Rails.application.routes.draw do
   resources :cities, only: :show 
   get '/cities', to: 'cities#index'
 
+  resources :countries, only: :show 
+  get '/countries', to: 'countries#index'
+
 end
