@@ -3,3 +3,4 @@ class AddGraffitiImageToUsers < ActiveRecord::Migration
     add_column :users, :graffiti_image, :string
   end
 end
+
