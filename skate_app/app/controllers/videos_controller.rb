@@ -64,6 +64,6 @@ class VideosController < ApplicationController
     end
 
     def video_params
-      params.require(:video).permit(:user_id, :vehicle_id, :city_id, :title, :description, :url, tricks_attributes: [:id, :comment, :timestamp, { type_ids: [] }, :_destroy])
+      params.require(:video).permit(:user_id, :vehicle_id, :city_id, :title, :description, :url, tricks_attributes: [:id, :comment, :timestamp, :type_ids, :_destroy])
     end
 end
