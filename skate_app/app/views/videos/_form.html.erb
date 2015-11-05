@@ -1,5 +1,5 @@
 <div class="formblock">
-  <%= form_for(@video) do |f| %>
+  <%= nested_form_for @video do |f| %>
     <% if @video.errors.any? %>
       <div id="error_explanation">
         <h2><%= pluralize(@video.errors.count, "error") %> prohibited this video from being saved:</h2>
@@ -32,6 +32,29 @@
       <%= f.label :youtube_embed_code %><br>
       <%= f.text_field :url %>
     </div>
+
+    <h4>Adding tricks</h4>
+    <%= f.fields_for :tricks do |t| %>
+      <div class="field">
+        <%= t.label :timestamp %>
+        <%= t.datetime_select :timestamp, ampm: true, minute_step: 1 %>
+      </div>
+
+      <div class="field">
+        <%= t.label :comment %>
+        <%= t.text_field :comment %>
+      </div>
+
+      <div class="field">
+        <%= t.label :type_ids %>
+        <%= t.collection_check_boxes :type_ids, Type.all, :id, :name  %>
+      </div>
+
+      <%= t.link_to_remove "Remove this trick" %>
+    
+    <% end %>
+    <p><%= f.link_to_add "Add a trick", :tricks %></p>
+
     <div class="actions">
       <%= f.submit %>
     </div>

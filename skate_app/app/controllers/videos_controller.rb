@@ -19,7 +19,7 @@ class VideosController < ApplicationController
   end
 
   def create
-    @video = Video.new(video_params)
+    @video = current_user.videos.new(video_params)
 
     respond_to do |format|
       if @video.save
@@ -45,7 +45,7 @@ class VideosController < ApplicationController
   end
 
   def destroy
-    @video.destroy
+    current_user.videos.find(params[:id]).destroy
     respond_to do |format|
       format.html { redirect_to videos_url, notice: 'Video was successfully destroyed.' }
       format.json { head :no_content }
@@ -64,6 +64,6 @@ class VideosController < ApplicationController
     end
 
     def video_params
-      params.require(:video).permit(:user_id, :vehicle_id, :city_id, :name, :description, :url)
+      params.require(:video).permit(:user_id, :vehicle_id, :city_id, :title, :description, :url, tricks_attributes: [:id, :comment, :timestamp, { type_ids: [] }, :_destroy])
     end
 end
