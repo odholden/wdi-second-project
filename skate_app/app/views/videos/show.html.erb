@@ -22,11 +22,14 @@
   <div class="trickshow">
     <% @tricks.each do |trick| %>
       <% if trick.video_id == @video.id %>
-        <ul class="small-block-grid-3">
+        <ul class="small-block-grid-3 trickrow">
           <li><p><%= trick.timestamp.strftime("%M:%S") %></p></li>
-          <% trick.types.each do |type| %>
-            <li><p><%= type.name.capitalize %></p></li>
-          <% end %>
+          <li>
+            <p><% trick.types.each do |type| %>
+                 <%= type.name + '.' %>
+               <% end %>
+            </p>
+          </li>
           <li><p><%= trick.comment %></p></li>
         </ul>
       <% else %>
