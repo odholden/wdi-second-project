@@ -2,9 +2,9 @@
 <iframe src="http://www.youtube.com/embed/<%= @video.url %>"></iframe>
 <div class="videoshow">
   <h2><%= @video.title %></h2>
-  <h3>fame <%= @video.votes_for.size %></h3>
-  <%= link_to "UPVOTE", like_video_path(@video), method: :put %>
+  <p>fame <%= @video.votes_for.size %></p>
   <p><%= @video.description %></p>
+  <%= link_to "UPFAME", like_video_path(@video), method: :put %> |
   <%= link_to 'EDIT', edit_video_path(@video) %> |
   <%= link_to 'DELETE', method: :destroy %> <br><br>
   <h3>tricks.</h3>

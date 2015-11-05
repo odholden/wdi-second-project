@@ -68,11 +68,50 @@ form .field input {
 }
 
 .newvideo {
+  margin-top: 30px;
+
   .formblock {
     position: relative;
     display: inline-block;
     bottom: none;
     margin-top: 15px;
+    background: none;
+
+    form {
+      .actions {
+        input {
+          color: black;
+          border: 2px solid black;
+        }
+      }
+
+      .field {
+        label {
+          color: black;
+          padding: 5px 0px;
+        }
+
+        select {
+          color: black;
+          width: 300px;
+          border: 2px solid black;
+          // background: none;
+
+        }
+
+        textarea {
+          color: black;
+          width: 300px;
+          border: 2px solid black;
+          margin: 0 auto;
+        }
+
+        input {
+          color: black;
+          width: 300px;
+          border: 2px solid black;        }
+      }
+    }
   }
 }
 

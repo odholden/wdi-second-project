@@ -2,11 +2,17 @@
   width: 90%;
   height: 20vh;
   display: inline-block;
-  background-color: $transblack;
+  background-image: url;
   position: relative;
+  overflow: hidden;
 
     img {
-      width: 100%;
+      position: absolute;
+      margin: auto;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
     }
 
     h2 {

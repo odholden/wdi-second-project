@@ -1,5 +1,6 @@
 .videoshow {
   clear: both;
+  text-align: left;
 
   h2 {
     padding: 0 5px;
@@ -8,11 +9,14 @@
 
   a {
     color: black;
+    border: 2px solid black;
+    margin-top: 10px;
   }
 
   p {
     clear: both;
     margin-bottom: 5px;
+    padding: 0 20px;
   }
 
   h3 {
