@@ -7,9 +7,9 @@ class Video < ActiveRecord::Base
   acts_as_votable
   accepts_nested_attributes_for :tricks, allow_destroy: true 
 
-  before_create
+  before_create :grab_youtube_id
 
   def grab_youtube_id
-    url[/(?<=[?&]v=)[^&$]+/]
+    self.url = url[/(?<=[?&]v=)[^&$]+/]
   end
 end

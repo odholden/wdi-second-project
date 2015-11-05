@@ -8,7 +8,7 @@
   <%= link_to "UPFAME.", like_video_path(@video), method: :put %>
   <% if @video.user_id == current_user.id %> 
     <%= link_to 'EDIT.', edit_video_path(@video) %>
-    <%= link_to 'DELETE.', method: :destroy %> 
+    <%= link_to 'DELETE.', @video, method: :delete %> 
   <% end %><br>
 
   <p><%= @video.description %></p>
