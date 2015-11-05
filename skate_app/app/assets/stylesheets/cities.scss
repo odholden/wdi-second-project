@@ -5,6 +5,7 @@
   background-image: url;
   position: relative;
   overflow: hidden;
+  border: 2px solid black;
 
     img {
       position: absolute;
@@ -19,7 +20,7 @@
       position: absolute;
       bottom: 0;
       left: 0;
-      color: white;
+      color: black;
       max-width: none;
     }
 }

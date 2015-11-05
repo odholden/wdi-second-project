@@ -1,6 +1,6 @@
 var cities = [];
 <% @cities.each do |city| %>
-  cities.push(new Array(<%= city.country_id %>, '<%=h city.name %>', <%= city.id %>));
+cities.push(new Array(<%= city.country_id %>, '<%=h city.name %>', <%= city.id %>));
 <% end %>
 
 function countrySelected() {
