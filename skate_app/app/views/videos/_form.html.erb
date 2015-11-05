@@ -12,51 +12,66 @@
       </div>
     <% end %>
 
-    <div class="field">
-      <%= f.label :vehicle_id %><br>
-      <%= f.collection_select(:vehicle_id, Vehicle.all, :id, :name) %>
-    </div>
-    <div class="field" id="city_field">
-      <label for="video_state_id">City</label><br>
-      <%= f.collection_select(:city_id, City.all, :id, :name) %>
-    </div>
-    <div class="field">
-      <%= f.label :title %><br>
-      <%= f.text_field :title %>
-    </div>
-    <div class="field">
-      <%= f.label :description %><br>
-      <%= f.text_area :description %>
-    </div>
-    <div class="field">
-      <%= f.label :youtube_embed_code %><br>
-      <%= f.text_field :url %>
-    </div>
+    <div class="videoform">
 
-    <h4>Adding tricks</h4>
-    <%= f.fields_for :tricks do |t| %>
+      <h2>video info.</h2>
       <div class="field">
-        <%= t.label :timestamp %>
-        <%= t.datetime_select :timestamp, ampm: true, minute_step: 1 %>
+        <%= f.label :vehicle_id %>
+        <%= f.collection_select(:vehicle_id, Vehicle.all, :id, :name) %>
+      </div>
+      <div class="field" id="city_field">
+        <label for="video_state_id">City</label>
+        <%= f.collection_select(:city_id, City.all, :id, :name) %>
+      </div>
+      <div class="field">
+        <%= f.label :title %>
+        <%= f.text_field :title %>
+      </div>
+      <div class="field">
+        <%= f.label :description %>
+        <%= f.text_area :description %>
+      </div>
+      <div class="field">
+        <%= f.label :add_code_from_youtube_url %>
+        <%= f.text_field :url %>
       </div>
 
-      <div class="field">
-        <%= t.label :comment %>
-        <%= t.text_field :comment %>
-      </div>
+    </div>
 
-      <div class="field">
-        <%= t.label :type_ids %>
-        <%= t.collection_check_boxes :type_ids, Type.all, :id, :name  %>
-      </div>
+    <div class="videoform">
 
-      <%= t.link_to_remove "Remove this trick" %>
+      <h2>tricks.</h2>
+
+      <%= f.fields_for :tricks do |t| %>
+        <div class="field">
+          <div class="timestamp">
+            <%= t.label :timestamp %>
+            <span class="datetime">
+              <%= t.time_select :timestamp, include_seconds: true, prompt: {hour: 'hours', minute: 'minutes', second: 'seconds'} %>
+            </span>
+          </div>
+        </div>
+
+        <div class="field">
+          <%= t.label :comment %>
+          <%= t.text_field :comment %>
+        </div>
+
+        <div class="field">
+          <%= t.label :trick_type %>
+          <%= t.collection_select :type_ids, Type.all, :id, :name  %>
+        </div>
+
+        <div class="btn"><%= t.link_to_remove "REMOVE TRICK." %></div>
+        
+      <% end %>
+    </div>
     
-    <% end %>
-    <p><%= f.link_to_add "Add a trick", :tricks %></p>
+    <br>
+    <div class="btn"><%= f.link_to_add "ADD TRICK.", :tricks %></div>
 
     <div class="actions">
-      <%= f.submit %>
+      <%= f.submit "CREATE VIDEO" %>
     </div>
   <% end %>
 </div>

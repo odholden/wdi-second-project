@@ -20,6 +20,8 @@
 
   h2 {
     color: white;
+    padding: 0;
+    margin: 0;
   }
 
 }
@@ -38,11 +40,45 @@ a {
   margin: 15px;
 }
 
-form .field input {
-  width: 300px;
+a.add_nested_fields, a.remove_nested_fields {
   color: black;
-  background-color: white;
-}  
+  border: 2px solid black;
+  padding: 4px;
+}
+
+p {
+  margin-bottom: 4px;
+}
+
+form {
+  .field {
+    input {
+    width: 300px;
+    color: black;
+    background-color: white;
+    } 
+
+    .datetime {
+      select {
+        margin: 0;
+        width: 50px;
+      }
+
+      p {
+        display: none;
+      }
+    }
+  }
+
+  h2 {
+    float: none;
+    padding-top: 30px;
+  } 
+}
+
+.btn {
+  margin-bottom: 20px;
+}
 
 #user_remember_me {
   width: 10px;
@@ -78,7 +114,6 @@ form .field input {
 }
 
 .newvideo {
-  margin-top: 30px;
 
   .formblock {
     position: relative;
@@ -87,11 +122,16 @@ form .field input {
     margin-top: 15px;
     background: none;
 
+    .videoform {
+      border-bottom: 4px;
+    }
+
     form {
       .actions {
         input {
           color: black;
           border: 2px solid black;
+          font-size: 30px;
         }
       }
 
