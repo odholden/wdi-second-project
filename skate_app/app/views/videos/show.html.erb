@@ -1,13 +1,24 @@
+<div class="videotitle">
+  <h1><%= @video.title + '.' %></h1>
+</div>
 
 <iframe src="http://www.youtube.com/embed/<%= @video.url %>"></iframe>
+
 <div class="videoshow">
-  <h2><%= @video.title %></h2>
-  <p>fame <%= @video.votes_for.size %></p>
+  <%= link_to "UPFAME.", like_video_path(@video), method: :put %>
+  <% if @video.user_id == current_user.id %> 
+    <%= link_to 'EDIT.', edit_video_path(@video) %>
+    <%= link_to 'DELETE.', method: :destroy %> 
+  <% end %><br>
+
   <p><%= @video.description %></p>
-  <%= link_to "UPFAME", like_video_path(@video), method: :put %> |
-  <%= link_to 'EDIT', edit_video_path(@video) %> |
-  <%= link_to 'DELETE', method: :destroy %> <br><br>
-  <h3>tricks.</h3>
+
+  <div class="fameshow">
+    <h2><%= @video.votes_for.size %> FAME.</h2>
+  </div>
+
+  <h2>tricks.</h2>
+
   <div class="trickshow">
     <% @tricks.each do |trick| %>
       <% if trick.video_id == @video.id %>
@@ -21,4 +32,5 @@
       <% end %>
     <% end %>
   </div>
+  
 </div>
