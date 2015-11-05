@@ -18,7 +18,8 @@ body {
     letter-spacing: -7px;
     color: black;
     margin: 0;
-    border-bottom: 2px solid black;
+    margin-bottom: 1%;
+    border-bottom: 4px solid black;
     background-image: url('board.png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -38,7 +39,7 @@ body {
   }
 
   .navigation {
-    border-bottom: 2px solid black;
+    border-bottom: 4px solid black;
   }
 
   a label {
@@ -58,12 +59,17 @@ body {
       font-size: 50px;
       line-height: 50px;
       letter-spacing: -4px;
+      border-bottom: 2px solid black;
     }
 
     h2 {
       font-size: 30px;
       line-height: 30px;
       letter-spacing: -2px;
+    }
+
+    .navigation {
+      border-bottom: 2px solid black;
     }
 
     .item {
