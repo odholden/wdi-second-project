@@ -1,6 +1,6 @@
 class CountriesController < ApplicationController
   def index
-    @countries = Country.all.limit(3)
+    @countries = Country.all
   end
 
   def show
