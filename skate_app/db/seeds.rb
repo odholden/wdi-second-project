@@ -102,7 +102,7 @@ c_uk      = Country.create(name: 'uk', image:'http://cdn.londonandpartners.com/v
 c_spain   = Country.create(name: 'spain', image:'http://www.askaboutsports.com/images/bull-fighting/bullfight-bsp-23708306-500x390.jpg')
 c_czech   = Country.create(name: 'czech republic', image:'http://finedininglovers.cdn.crosscast-system.com/BlogPost/xl_6468_TP-prague-finedininglovers.jpg')
 c_italy   = Country.create(name: 'italy', image:'http://myonlinedestinations.com/wp-content/uploads/2015/04/coliseum-hdr-1600x939-wallpaper-1683138.jpg')
-c_france  = Country.create(name: 'france', image:'http://dreamatico.com/data_images/paris/paris-6.jpg')
+c_france  = Country.create(name: 'france', image:'http://dreamatico.com/data_images/paris/paris-8.jpg')
 c_neth    = Country.create(name: 'netherlands', image:'https://www.shortstay-amsterdam.com/wp-content/uploads/2014/11/apartment-13.jpg')
 c_sweden  = Country.create(name: 'sweden', image:'http://images.nationalgeographic.com/wpf/media-live/photos/000/670/cache/aurora-borealis-sweden_67083_990x742.jpg')
 c_norway  = Country.create(name: 'norway', image:'http://d33gqm9lw3yglq.cloudfront.net/ImageVaultFiles/id_545/cf_878/alesund_w_740x334.JPG')
@@ -116,7 +116,7 @@ c_poland  = Country.create(name: 'poland', image:'http://www3.hilton.com/resourc
 
 # CITIES
   ## USA
-  city_la       = City.create(name:'los angeles', country_id: c_usa.id, image:'https://www.burgessyachts.com/media/adminforms/locations/l/o/los_angeles.jpg')
+  city_la       = City.create(name:'los angeles', country_id: c_usa.id, image:'http://students.marshall.usc.edu/undergrad/files/2012/04/Selling-Your-Los-Angeles-Home1.jpeg')
   city_nyc      = City.create(name:'new york', country_id: c_usa.id, image:'https://www.burgessyachts.com/media/adminforms/locations/n/e/new_york_1.jpg')
   city_sanfran  = City.create(name:'san francisco', country_id: c_usa.id, image:'http://static1.squarespace.com/static/547f29bfe4b0dc192ed7bdac/54aeb15ce4b018c14f34c7cb/54aeb160e4b018c14f34c7ed/1420734817363/san-franc.jpg?format=2500w')
   city_portland = City.create(name:'portland', country_id: c_usa.id, image:'https://images.trvl-media.com/media/content/shared/images/travelguides/destination/178299/Portland-20917.jpg')
@@ -153,7 +153,7 @@ c_poland  = Country.create(name: 'poland', image:'http://www3.hilton.com/resourc
   city_vienna   = City.create(name:'vienna', country_id: c_austria.id, image:'url')
   city_moscow   = City.create(name:'moscow', country_id: c_russia.id, image: 'http://www.sigmalive.com/en/uploads/images/news/russia-investing_in_cyprus.jpg')
   city_warsaw   = City.create(name:'warsaw', country_id: c_poland.id, image: 'http://www3.hilton.com/resources/media/hi/WAWHIHI/en_US/img/shared/full_page_image_gallery/main/HL_warsawoldtown3_31_675x359_FitToBoxSmallDimension_Center.jpg')
-  city_paris    = City.create(name:'paris', country_id: c_france.id, image:'http://dreamatico.com/data_images/paris/paris-6.jpg')
+  city_paris    = City.create(name:'paris', country_id: c_france.id, image:'http://dreamatico.com/data_images/paris/paris-8.jpg')
   city_valencia = City.create(name:'valencia', country_id: c_spain.id, image:'url')
   city_amster   = City.create(name:'amsterdam', country_id: c_neth.id, image:'https://www.shortstay-amsterdam.com/wp-content/uploads/2014/11/apartment-13.jpg')
   city_oslo     = City.create(name:'norway', country_id: c_norway.id, image:'url')
