@@ -5,11 +5,10 @@
   <%= image_tag @user.image %>
 <% end %>
   <div class="usernamefame">
+    <h2><% @user.username + '.' %></h2>
     <p>fame <%= @fame %></p>
   </div>
 </div>
-
-<h2><%= @user.username.capitalize + '.' %></h2>
 
 <%= render @videos %>
 

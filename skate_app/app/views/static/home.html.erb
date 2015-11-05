@@ -7,7 +7,7 @@
       <%= image_tag current_user.image %>
     <% end %>  
     <div class="usernamefame">
-      <h2><%= current_user.username %></h2>
+      <h2><%= current_user.username + '.' %></h2>
       <p><%= @fame %> fame </p>
       <%= button_to "NEW VIDEO.", new_video_path, :method => "get" %>
     </div>

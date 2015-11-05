@@ -8,7 +8,7 @@
         </a>
       </li>
       <li class="right">
-        <h2><%= video.title %></h2>
+        <h2><%= video.title + '.'%></h2>
         <h3><%= video.description %></h3> 
         <p><%= video.get_likes.size %> fame </p>
         <% if current_page? root_path %>
