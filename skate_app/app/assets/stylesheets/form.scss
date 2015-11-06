@@ -38,10 +38,21 @@ a {
   margin: 15px;
 }
 
-a.add_nested_fields, a.remove_nested_fields {
+a.add_nested_fields {
   color: black;
   border: 2px solid black;
   padding: 4px;
+}
+
+a.remove_nested_fields {
+  color: black;
+  border: 2px solid black;
+  padding: 4px;
+}
+
+.space {
+  height: 20px;
+  width: 100%;
 }
 
 p {
@@ -120,10 +131,6 @@ form {
     margin-top: 15px;
     background: none;
 
-    .videoform {
-      border-bottom: 4px;
-    }
-
     form {
       .actions {
         input {
@@ -164,6 +171,11 @@ form {
   }
 }
 
+.videoform {
+  border-bottom: 4px solid black;
+  padding-bottom: 20px;
+}
+
 @media only screen and (min-width: 640px) {
   .content {
     background-image: url('bg2.png');
@@ -195,5 +207,9 @@ form {
       width: 100%;
 
     }
+  }
+
+  .videoform {
+    border-bottom: 2px solid black;
   }
 }

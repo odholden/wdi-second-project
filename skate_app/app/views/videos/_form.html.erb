@@ -1,78 +1,78 @@
 <div class="formblock">
   <%= nested_form_for @video do |f| %>
-    <% if @video.errors.any? %>
-      <div id="error_explanation">
-        <h2><%= pluralize(@video.errors.count, "error") %> prohibited this video from being saved:</h2>
+  <% if @video.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(@video.errors.count, "error") %> prohibited this video from being saved:</h2>
 
-        <ul>
-        <% @video.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
-        </ul>
-      </div>
-    <% end %>
-
-    <div class="videoform">
-
-      <h2>video info.</h2>
-      <div class="field">
-        <%= f.label :vehicle_id %>
-        <%= f.collection_select(:vehicle_id, Vehicle.all, :id, :name) %>
-      </div>
-      <div class="field" id="city_field">
-        <label for="video_state_id">City</label>
-        <%= f.collection_select(:city_id, City.all, :id, :name) %>
-      </div>
-      <div class="field">
-        <%= f.label :title %>
-        <%= f.text_field :title %>
-      </div>
-      <div class="field">
-        <%= f.label :description %>
-        <%= f.text_area :description %>
-      </div>
-      <div class="field">
-        <%= f.label :add_code_from_youtube_url %>
-        <%= f.text_field :url %>
-      </div>
-
-    </div>
-
-    <div class="videoform">
-
-      <h2>tricks.</h2>
-
-      <%= f.fields_for :tricks do |t| %>
-        <div class="field">
-          <div class="timestamp">
-            <%= t.label :timestamp %>
-            <span class="datetime">
-              <%= t.time_select :timestamp, include_seconds: true, prompt: {hour: 'hours', minute: 'minutes', second: 'seconds'} %>
-            </span>
-          </div>
-        </div>
-
-        <div class="field">
-          <%= t.label :comment %>
-          <%= t.text_field :comment %>
-        </div>
-
-        <div class="field">
-          <%= t.label :trick_type %>
-          <%= t.collection_select :type_ids, Type.all, :id, :name  %>
-        </div>
-
-        <div class="btn"><%= t.link_to_remove "REMOVE TRICK." %></div>
-        
+    <ul>
+      <% @video.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
       <% end %>
-    </div>
-    
-    <br>
-    <div class="btn"><%= f.link_to_add "ADD TRICK.", :tricks %></div>
+    </ul>
+  </div>
+  <% end %>
 
-    <div class="actions">
-      <%= f.submit "CREATE VIDEO" %>
+  <div class="videoform">
+
+    <h2>video info.</h2>
+    <div class="field">
+      <%= f.label :vehicle_id %>
+      <%= f.collection_select(:vehicle_id, Vehicle.all, :id, :name) %>
     </div>
+    <div class="field" id="city_field">
+      <label for="video_state_id">City</label>
+      <%= f.collection_select(:city_id, City.all, :id, :name) %>
+    </div>
+    <div class="field">
+      <%= f.label :title %>
+      <%= f.text_field :title %>
+    </div>
+    <div class="field">
+      <%= f.label :description %>
+      <%= f.text_area :description %>
+    </div>
+    <div class="field">
+      <%= f.label :add_code_from_youtube_url %>
+      <%= f.text_field :url %>
+    </div>
+
+  </div>
+
+
+  <h2>tricks.</h2>
+
+  <%= f.fields_for :tricks do |t| %>
+  <div class="videoform">
+
+    <div class="field">
+      <div class="timestamp">
+        <%= t.label :timestamp %>
+        <span class="datetime">
+          <%= t.time_select :timestamp, include_seconds: true, prompt: {hour: 'hours', minute: 'minutes', second: 'seconds'} %>
+        </span>
+      </div>
+    </div>
+
+    <div class="field">
+      <%= t.label :comment %>
+      <%= t.text_field :comment %>
+    </div>
+
+    <div class="field">
+      <%= t.label :trick_type %>
+      <%= t.collection_select :type_ids, Type.all, :id, :name  %>
+    </div>
+
+    <div class="btn"><%= t.link_to_remove "REMOVE TRICK." %></div>
+  </div>
+
+  <% end %>
+
+  <div class="btn"><div class="space"></div><%= f.link_to_add "ADD TRICK.", :tricks %></div>
+
+  <div class="actions">
+    <%= f.submit "CREATE VIDEO" %>
+  </div>
   <% end %>
 </div>
 

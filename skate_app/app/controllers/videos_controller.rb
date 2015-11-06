@@ -45,7 +45,7 @@ class VideosController < ApplicationController
   end
 
   def destroy
-    current_user.videos.find(params[:id]).destroy
+    current_user.videos.find(params[:id]).destroy!
     respond_to do |format|
       format.html { redirect_to videos_url, notice: 'Video was successfully destroyed.' }
       format.json { head :no_content }

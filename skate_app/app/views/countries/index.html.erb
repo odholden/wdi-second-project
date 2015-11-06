@@ -2,7 +2,7 @@
 
 <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3">
   <% @countries.each do |country| %>
-    <li>
+    <li class="slide">
       <div class="display_tile">
         <%= link_to image_tag(country.image), country_path(country.id) %>
         <h2><%= country.name + '.' %></h2>
