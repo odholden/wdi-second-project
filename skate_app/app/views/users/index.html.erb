@@ -1,20 +1,21 @@
 <h1>MATES.</h1>
-
-<% @users.each do |user| %>
+<div class="userblock">
+  <% @users.each do |user| %>
   <div class="userinfo small-12 large-6 columns">
     <% if user.graffiti_image.present? %>
-      <%= link_to image_tag(user.graffiti_image.url), user_path(user.id) %>
+    <%= link_to image_tag(user.graffiti_image.url), user_path(user.id) %>
     <% else %>
     <%= link_to image_tag(user.image), user_path(user.id) %>
     <% end %>    
     <div class="usernamefame">
       <h2><%= user.username + '.'%></h2>
       <% user.videos.each do |video| %>
-        <% upvotes = video.get_likes.size %>
-        <% @fame = @fame + upvotes %>
+      <% upvotes = video.get_likes.size %>
+      <% @fame = @fame + upvotes %>
       <% end %>
       <p>fame <%= @fame %></p>
       <% @fame = 0 %>
     </div>
   </div>
-<% end %>
+  <% end %>
+</div>

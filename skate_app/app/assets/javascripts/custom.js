@@ -4,6 +4,6 @@ $(function() {
 
     var index = $(this).index() + 1;
     console.log(index);
-    $(this).hide().delay(400*index).slideDown();
+    $(this).hide().delay(200*index).slideDown();
   });
 });
