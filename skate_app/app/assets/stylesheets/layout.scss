@@ -51,9 +51,15 @@ body {
     padding: 10px 0px;
   }
 
+  .userblock {
+    display: inline-block;
+  }
+
   footer {
+    height: 80px;
     color: white;
-    // border-top: 4px solid black;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
   }
 }
 
@@ -85,6 +91,15 @@ body {
 
     .item {
       padding: 0px;
+    }
+
+    footer {
+      height: 50px;
+      border-top: 2px solid black;
+      border-bottom: 2px solid black;
+      background-image: url('bg-footer.png');
+      background-size: 100%;
+      overflow: hidden;
     }
   }
 }
