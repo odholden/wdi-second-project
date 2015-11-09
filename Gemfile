@@ -1,7 +1,5 @@
 source 'https://rubygems.org'
 
-
-gem 'rails_12factor'
 gem 'nested_form'
 gem 'carrierwave', '0.10.0'
 gem 'acts_as_votable', '~> 0.10.0'
@@ -26,5 +24,9 @@ end
 group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
+end
+
+group :production do 
+  gem 'rails_12factor'
 end
 
