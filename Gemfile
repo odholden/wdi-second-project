@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'fog'
 gem 'nested_form'
 gem 'carrierwave', '0.10.0'
 gem 'acts_as_votable', '~> 0.10.0'
