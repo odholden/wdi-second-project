@@ -22,6 +22,4 @@ Rails.application.routes.draw do
   resources :countries, only: :show 
   get '/countries', to: 'countries#index'
 
-  get '/users/destroy', to: 'devise/registrations#destroy'
-
 end
