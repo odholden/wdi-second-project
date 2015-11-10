@@ -1,0 +1,11 @@
+<div class="userinfo small-12 large-6 columns">
+  <% if user.graffiti_image.present? %>
+    <%= link_to image_tag(user.graffiti_image.url), user_path(user.id) %>
+  <% else %>
+    <%= link_to image_tag(user.image), user_path(user.id) %>
+  <% end %>    
+  <div class="usernamefame">
+    <h2><%= user.username + '.'%></h2>
+    <p>fame <%= user.fame %></p>
+  </div>
+</div>

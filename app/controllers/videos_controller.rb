@@ -2,7 +2,7 @@ class VideosController < ApplicationController
   before_action :set_video, only: [:show, :edit, :update, :destroy]
 
   def index
-    @videos = Video.all.order(:created_at).reverse
+    @videos = Video.all
   end
 
   def show
@@ -11,8 +11,7 @@ class VideosController < ApplicationController
 
   def new
     @cities = City.all
-    @video = Video.new
-    @video.user_id = current_user.id if current_user
+    @video = current_user.videos.new
   end
 
   def edit

@@ -6,11 +6,11 @@
 <% end %>
   <div class="usernamefame">
     <h2><%= @user.username + '.' %></h2>
-    <p>fame <%= @fame %></p>
+    <p>fame <%= @user.fame %></p>
   </div>
 </div>
 
-<%= render @videos %>
+<%= render @user.videos %>
 
 
 

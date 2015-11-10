@@ -14,8 +14,9 @@
 
 <body>
   <% if user_signed_in? %>
-  <%= render 'navigation' %>
+    <%= render 'navigation' %>
   <% end %>
+  
   <%= yield %>
   <footer>
     <p>&copy; OLLIE.</p>

@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'fog'
 gem 'nested_form'
-gem 'carrierwave', '0.10.0'
+gem 'carrierwave'
 gem 'acts_as_votable', '~> 0.10.0'
 gem 'foundation-rails'
 gem 'devise'
@@ -16,7 +16,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-ruby '2.2.3'
+# ruby '2.2.3'
 
 group :development, :test do
   gem 'byebug'
