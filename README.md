@@ -2,7 +2,7 @@
 ### General Assembly WDI London - Project 2
 #### A mobile first social network for skaters using video
 
-![alt text](https://raw.github.com/odholden/wdi-second-project/app/assets/images/ollie1.png)
+![alt text](https://raw.github.com/odholden/wdi-second-project/blob/master/app/assets/images/ollie1.png)
 
 OLLIE is an original social platform designed for skaters to share and rank videos from around the world.
 
@@ -21,11 +21,11 @@ After some research, it became clear that simply geotagging skate spots would no
 
 OLLIE (the name is derived from a common skate trick) is simply styled to allow for easy mobile use, with no complicated menus cluttering the user interface. The plan was for the videos to take centre stage.
 
-![alt text](https://raw.github.com/odholden/wdi-second-project/app/assets/images/ollie2.png)
+![alt text](https://raw.github.com/odholden/wdi-second-project/blob/master/app/assets/images/ollie2.png)
 
-![alt text](https://raw.github.com/odholden/wdi-second-project/app/assets/images/ollie3.png)
+![alt text](https://raw.github.com/odholden/wdi-second-project/blob/master/app/assets/images/ollie3.png)
 
-![alt text](https://raw.github.com/odholden/wdi-second-project/app/assets/images/ollie4.png)
+![alt text](https://raw.github.com/odholden/wdi-second-project/blob/master/app/assets/images/ollie4.png)
 
 #### How it works
 
