@@ -98,10 +98,10 @@ _180_heelflip      = Type.create(name: '180 Heelflip', difficulty: '')
 
 # COUNTRIES
 c_usa     = Country.create(name: 'usa', image:'https://www.burgessyachts.com/media/adminforms/locations/n/e/new_york_1.jpg')
-c_uk      = Country.create(name: 'uk', image:'https://www.imperial.ac.uk/ImageCropToolT4/imageTool/uploaded-images/LONDON_shutterstock_229478404--tojpeg_1417791048879_x1.jpg')
+c_uk      = Country.create(name: 'uk', image:'http://nebmagic.com/wp-content/uploads/2015/02/london-227602.jpg')
 c_spain   = Country.create(name: 'spain', image:'http://koshertravelers.com/wp-content/uploads/2015/06/Spn-Mn01.jpg')
 c_czech   = Country.create(name: 'czech republic', image:'http://www.ens-lyon.fr/crmn/pnmr/wp-content/uploads/2015/02/PRAGUE-bridges.jpg')
-c_italy   = Country.create(name: 'italy', image:'http://arthdwallpaper.com/designarthd/coliseum-wallpaper-high-resolution.html')
+c_italy   = Country.create(name: 'italy', image:'https://upload.wikimedia.org/wikipedia/commons/5/53/Colosseum_in_Rome,_Italy_-_April_2007.jpg')
 c_france  = Country.create(name: 'france', image:'http://travelnoire.com/wp-content/uploads/2014/02/Eiffel-Tower-Paris-France.jpg')
 c_neth    = Country.create(name: 'netherlands', image:'https://www.shortstay-amsterdam.com/wp-content/uploads/2014/11/apartment-13.jpg')
 c_sweden  = Country.create(name: 'sweden', image:'https://images.nationalgeographic.com/wpf/media-live/photos/000/670/cache/aurora-borealis-sweden_67083_990x742.jpg')
