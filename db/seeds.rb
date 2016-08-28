@@ -209,6 +209,6 @@ t7.types << _180
 
 
 
-
+books[0].groups << group[0]
 
 
